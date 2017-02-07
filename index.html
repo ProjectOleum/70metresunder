@@ -3,61 +3,75 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Parallax Template - Materialize</title>
-  <!-- test  -->
+  <title>Oleum</title>
+
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+     <div class="navbar-fixed white center">
+     	<nav class="white z-depth-4">
+			<a href="#section1" class="waves-effect waves-light btn blue">Intro</a>
+			<a href="#section2" class="waves-effect waves-light btn red">What they are</a>
+			<a href="#section3" class="waves-effect waves-light btn deep-purple">History</a>
+			<a href="#section4" class="waves-effect waves-light btn grey">Alternatives</a>
+            <a href="#section5" class="waves-effect waves-light btn green">For Who?</a>
+		</nav>
     </div>
-  </nav>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+
+        <!-- Start of autoplayVideo -->
+        <div class="video-container">
+          <div class="row center">
+          
+           <h1 class="header center white-text text-lighten-2">Oleum </h1>
+            <h4 class="header center white-text col s12">Oil Sands phase out?</h4>
+       
+
+            <video autoplay loop class="banner__video">
+              <source src="trudeau_OilSands.mp4" type="video/mp4">
+            </video>
+            <!-- end of autoplayVideo -->
+          </div>
+        </div>
+
+
+
+  <div id="section1" class="parallax-container section scrollspy blue" style="height:800px;">
+    <div class="section">
       <div class="container">
         <br><br>
-        <h1 class="header center text-lighten-2">Website / Project Title </h1>
+        <h1 class="header center text-lighten-2">Information Title</h1>
         <div class="row center">
-          <h5 class="header col s12 light">SubTitle or some other text shit</h5>
+          <h5 class="header col s12 ">Other textual information</h5>
         </div>
-        	<div class="container col s12 center">
-        	<img class="responsive-img" src="images/image_Placeholder-01.png">
-            </div>
+<!--
+        <div class="video-container">
+          <iframe src="http://globalnews.ca/video/embed/3180168/" width="670" height="437" frameborder="0" allowfullscreen></iframe>
+        </div>
+
              <div class="row center">
              <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
              </div>
-  
-        <div class="row center">
-          <a href="" id="download-button" class="btn-large waves-effect waves-dark white grey-text text-darken-2">BUTTON</a>
-        </div>
-        <br><br>
-		
-       
+
+          -->
+
       </div>
     </div>
-    <div class="parallax"><img src="images/placeholderbg2.jpg"></div>
   </div>
 
 
-  <div class="container">
-    <div class="section">
 
+ <div class="section  red"  style="height:800px;">
+  <div class="container">
       <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s6">
+      <div class="row center">
+          <h4 class="header col s12">What are the Oil Sands</h4>
+        <div  id="section2" class=" col s6 scrollspy">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Small Text Block 1</h5>
@@ -74,39 +88,108 @@
             <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
+  
+  
+  <div id="section3" class="parallax-container scrollspy" style="height:800px;">
+  	 <div class="row center">
+          <h4 class="header col s12">History</h4>
+     </div>
+      <div class="parallax"><img src="images/PURPLESANDS.jpg"></div>      
+    </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div id="section5" class="parallax-container section scrollspy green" style="height:800px;">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Who would alternatives be for?</h5>
         </div>
-        
-         <div class="col s3">
-                <div class="card-panel grey lighten-5 s5">
+		<!-- This is the shit in the card -->
+         	<div class="col s12">
+                <div class="card-panel green lighten-3">
                   <div class="row valign-wrapper">
+                    <!-- For the Icon -->
                     <div class="col s2">
-                      <img src="images/icon-01.png" alt="" class="small circle responsive-img left-align"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s9">
-                      <span class="black-text">
-                        This shit could be used to represent a quote or a tweet or some other text, maybe even audio clip
-                      </span>
-                    </div>
-                  </div>
+                      <img src="images/icon-01.png" alt="" class="small circle responsive-img left-align white"></div>
+                    	 <!-- For the TEXT -->
+                        <div class="col s9">
+                           <blockquote class="flow-text">
+                            Person 1
+                           </blockquote>
+                          <blockquote class="">
+                            This shit could be used to represent a quote or a tweet or some other text.
+                          </blockquote>
+                          <blockquote class="">
+                            Hmm look at that another line just tossed in there
+                          </blockquote>
+                    	</div> 
+                        <!-- END of text lines -->
+                  	</div>
+                  	<!-- END For the Icon -->
                 </div>
               </div>
-
+			  <!-- This is the shit in the card -->
+              
+              
+              <!-- This is the shit in the card -->
+         	<div class="col s12">
+                <div class="card-panel green lighten-3">
+                  <div class="row valign-wrapper">
+                    <!-- For the Icon -->
+                    <div class="col s2">
+                      <img src="images/icon-01.png" alt="" class="small circle responsive-img left-align white"></div>
+                    	 <!-- For the TEXT -->
+                        <div class="col s9">
+                           <blockquote class="flow-text">
+                            Person 2
+                           </blockquote>
+                          <blockquote class="">
+                            This shit could be used to represent a quote or a tweet or some other text.
+                          </blockquote>
+                          <blockquote class="">
+                            Hmm look at that another line just tossed in there
+                          </blockquote>
+                    	</div> 
+                        <!-- END of text lines -->
+                  	</div>
+                  	<!-- END For the Icon -->
+                </div>
+              </div>
+			  <!-- This is the shit in the card -->
+              
+              <!-- This is the shit in the card -->
+         	<div class="col s12">
+                <div class="card-panel green lighten-3">
+                  <div class="row valign-wrapper">
+                    <!-- For the Icon -->
+                    <div class="col s2">
+                      <img src="images/icon-01.png" alt="" class="small circle responsive-img left-align white"></div>
+                    	 <!-- For the TEXT -->
+                        <div class="col s9">
+                           <blockquote class="flow-text">
+                            Person 3
+                           </blockquote>  
+                          <blockquote class="">
+                            This shit could be used to represent a quote or a tweet or some other text.
+                          </blockquote>
+                          <blockquote class="">
+                            Hmm look at that another line just tossed in there
+                          </blockquote>
+                    	</div> 
+                        <!-- END of text lines -->
+                  	</div>
+                  	<!-- END For the Icon -->
+                </div>
+              </div>
+			  <!-- This is the shit in the card -->
+              
       </div>
     </div>
-    <div class="parallax"><img src="images/placeholderbg2.jpg" alt="Unsplashed background img 2"></div>
   </div>
+   <!-- END OF GREEN SECTION -->
 
   <div class="container">
     <div class="section">

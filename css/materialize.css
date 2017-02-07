@@ -4008,6 +4008,7 @@ nav {
   width: 100%;
   height: 56px;
   line-height: 56px;
+  background-opacity: 0.1;
 }
 
 nav.nav-extended {
@@ -4112,6 +4113,7 @@ nav .nav-title {
   display: inline-block;
   font-size: 32px;
   padding: 28px 0;
+
 }
 
 nav ul {
@@ -4189,6 +4191,7 @@ nav .input-field label i {
 
 nav .input-field label.active i {
   color: #fff;
+
 }
 
 .navbar-fixed {
