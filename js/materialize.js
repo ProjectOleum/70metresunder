@@ -3819,8 +3819,8 @@ if (jQuery) {
               $interval = setInterval(
                 function(){
                   $active_index = $slider.find('.active').index();
-                  if ($slides.length == $active_index + 1) $active_index = 0; // loop to start
-                  else $active_index += 1;
+                  if ($slides.length == $active_index + 10) $active_index = 0; // loop to start
+                  else $active_index += 10;
 
                   moveToSlide($active_index);
 
