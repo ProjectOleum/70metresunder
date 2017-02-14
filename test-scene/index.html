@@ -5,11 +5,7 @@
     <title>Test Scene</title>
     <meta charset="utf-8">
     <meta name="description" content="Test Scene">
-    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../../bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,31 +14,17 @@
 
   <body>
     
-    <a-scene style="z-index:10">
+    <a-scene>
     <!-- for embedded make tag above like this -> <a-scene embedded style="z-index:10">-->
       <a-assets>
         <a-asset-item id="tree" src="snow_tree.dae">
+        <a-asset-item id="refinery" src="oil_refinery.dae">
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
       </a-assets>
 
-      <!-- Primitives. -->
-      <a-box position="-1 10 -3" rotation="0 45 0" color="#1EE3D9"></a-box>
-      <a-box position="-1 0.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.35 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.85 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-collada-model position="1 1 4"src="#tree"></a-collada-model>
-
-      <a-collada-model position="1 1 4"src="#tree"></a-collada-model>
-      <a-collada-model position="2 1 4"src="#tree"></a-collada-model>
-      <a-collada-model position="-4 1 -4"src="#tree"></a-collada-model>
-      <a-collada-model position="5 1 4"src="#tree"></a-collada-model>
-      <a-collada-model position="-2 1 4"src="#tree"></a-collada-model> 
-      <a-box position="-1 0.6 4" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.35 5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.85 3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 .1 4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-
+      <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
+      
       <!-- Background sky. -->
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
 
@@ -54,7 +36,7 @@
           
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../../bower_components/materialize/dist/js/materialize.min.js"></script>
+   
     
   </body>
 </html>

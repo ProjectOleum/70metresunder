@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+ 
+ 
 </head>
 <body>
 
@@ -50,8 +53,28 @@
       <!--   Icon Section   -->
       <div class="container center">
         <div class="col s6">
-          <img class="responsive-img large" src="images/old1.jpg">
+          <!--<button class="btn-floating btn-large waves-effect waves-light red enter-vr"><i class="material-icons">aspect_ratio</i></button>-->
+          <a-scene embedded style="height:400px;width:100%;">
+          <!-- for embedded make tag above like this -> <a-scene embedded style="z-index:10">-->
+            <a-assets>
+              <a-asset-item id="tree" src="test-scene/snow_tree.dae">
+              <a-asset-item id="refinery" src="test-scene/oil_refinery.dae">
+              <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+              <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+            </a-assets>
+
+            <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
+            
+            <!-- Background sky. -->
+            <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+
+            <!-- Ground. -->
+            <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
+
+          </a-scene>  
+          <!--<iframe id="aframe" src="test-scene/index.html?ui=false"></iframe>-->
         </div>
+        
 
       <div class="icon-block">
         <div class="col s6">
@@ -81,7 +104,7 @@
 
         <div class="col s6">
           <div class="icon-block">
-            <h2 class="center brown-text text-darken-2"><i class="material-icons">invert_colors_off</i></h2>
+            <h2 class="center brown-text text-darken-2 "><i class="material-icons">invert_colors_off</i></h2>
             <h5 class="center brown-text text-darken-2">Small Text Block 2</h5>
 
             <p class="light brown-text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -284,6 +307,19 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    //var buttonEl = document.querySelector('.enter-vr');
+    var scene = document.querySelector('a-scene');
+    scene.addEventListener('enter-vr', run);
+    scene.addEventListener('exit-vr', stop);
+    function run(){
+      var canvas = $('.a-canvas');
+      canvas.css("z-index", "1000");
+    }
+    function stop(){
+      var canvas = $('.a-canvas');
+      canvas.css("z-index", "1");
+    }
+  </script>
   </body>
 </html>
