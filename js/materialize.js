@@ -4886,14 +4886,16 @@ if (jQuery) {
         var value = options[i];
         var selector = value.selector,
             offset = value.offset,
-            callback = value.callback;
+            callback = value.callback
+            repeat = value.repeat;
 
         var currentElement = document.querySelector(selector);
         if ( currentElement !== null) {
           var elementOffset = currentElement.getBoundingClientRect().top + window.pageYOffset;
 
           if (windowScroll > (elementOffset + offset)) {
-            if (value.done !== true) {
+            //if (value.done !== true) { //removed to make repeater
+            if(repeat || value.done !== true){
               if (typeof(callback) === 'function') {
                 callback.call(this, currentElement);
               } else if (typeof(callback) === 'string') {
@@ -4902,6 +4904,7 @@ if (jQuery) {
               }
               value.done = true;
             }
+        	//} //removed to make repeater
           }
         }
       }
