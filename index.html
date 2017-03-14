@@ -79,8 +79,8 @@
       <div class=" scontainer center">
         <div class="col s6">
           <!--<button class="btn-floating btn-large waves-effect waves-light red enter-vr"><i class="material-icons">aspect_ratio</i></button>-->
-          <a-scene embedded style="height:400px;width:100%;">
-          <!-- for embedded make tag above like this -> <a-scene embedded style="z-index:10">
+          <a-scene embedded style="height:400px;width:100%;z-index:10;">
+          <!-- for embedded make tag above like this -->
             <a-assets>
               <a-asset-item id="tree" src="test-scene/snow_tree.dae">
               <a-asset-item id="refinery" src="test-scene/oil_refinery.dae">
@@ -90,10 +90,10 @@
 
             <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
             
-            <!-- Background sky. 
+            <!-- Background sky. -->
             <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
 
-            <!-- Ground. 
+            <!-- Ground. -->
             <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
 
           </a-scene>  
