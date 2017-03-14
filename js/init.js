@@ -10,6 +10,17 @@
     $('.scrollspy').scrollSpy();
   });
 
+var _interactiveMap = document.getElementById('interactive-map');
+
+var interactiveMap = bodymovin.loadAnimation({
+  container: _interactiveMap, // the dom element
+  renderer: 'svg',
+  loop: true,
+  prerender: false,
+  autoplay: true,
+  autoloadSegments: false,
+  path: '/js/bm1.json'
+});
 
 var intro = document.querySelector('.banner');
 var introPlayer = document.querySelector('.banner__video');
