@@ -19,7 +19,7 @@ var interactiveMap = bodymovin.loadAnimation({
   prerender: false,
   autoplay: true,
   autoloadSegments: false,
-  path: '/js/testWhole.json'
+  path: '/js/data.json'
 });
 
 var intro = document.querySelector('.banner');
