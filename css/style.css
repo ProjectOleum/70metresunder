@@ -14,16 +14,15 @@ Stuff added
 */
 
 
-.testTRAV{
-  transiton: all 0.5s;
-  -webkit-transition:  all 0.5s;
+.mapover{
+  opacity: 0.0;
+  transition: all 2s;
 }
 
-.testTRAV:hover{
-  transiton: all 0.5s;
-  -webkit-transition:  all 0.5s; /* Safari */
-  transform: scale(1.5,1.5);
+.mapover:hover{
+  opacity: 0.9;
 }
+
 
 .banner {
   position: relative;
