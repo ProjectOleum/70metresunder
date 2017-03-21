@@ -13,6 +13,18 @@ Stuff added
 
 */
 
+
+.testTRAV{
+  transiton: all 0.5s;
+  -webkit-transition:  all 0.5s;
+}
+
+.testTRAV:hover{
+  transiton: all 0.5s;
+  -webkit-transition:  all 0.5s; /* Safari */
+  transform: scale(1.5,1.5);
+}
+
 .banner {
   position: relative;
   overflow: hidden;
@@ -58,7 +70,9 @@ Stuff added
 
 
 
-
+.carousel{
+  overflow-y: auto;
+}
 
 
 
@@ -96,20 +110,6 @@ p {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
 
   .mute-button {
     padding-top:28%;
@@ -125,4 +125,22 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+
+  }
 }
