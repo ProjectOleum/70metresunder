@@ -88,5 +88,11 @@ var introPlayer = document.querySelector('.banner__video');
 
 	];
 	Materialize.scrollFire(options);
+
+
+
+
+
+
     
 })(jQuery); // end of jQuery name space
