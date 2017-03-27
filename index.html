@@ -16,10 +16,31 @@
 <body class="grey darken-3">
             
 
-     <div class="navbar-fixed center">
+     <div class="navbar-fixed center"  style="z-index:1000000000;">
      	<nav class="grey darken-4 z-depth-2">
        
-        <ul>
+
+        <ul id="slide-out" class="side-nav grey darken-3">
+          <li><div class="userView">
+            <div class="background">
+              <img src="images/2011Sands.png">
+            </div>
+            <a href="#!user"><img class="circle" src="images/O-Nav.png"></a>
+            <a href="#!name"><span class="white-text name">Project Oleum</span></a>
+          </div></li>
+          <li ><a href="#section1" class="waves-effect white-text">Intro</a></li>
+          <li><a href="#section2" class="waves-effect white-text">About</a></li>
+          <li><a href="#section3" class="waves-effect white-text">History</a></li>
+          <li><a href="#section4" class="waves-effect white-text">Change</a></li>
+          <li><a href="#section5" class="waves-effect white-text">Benefits</a></li>
+          <li><a href="#section5" class="waves-effect white-text">Alternatives</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse "><i class="material-icons brown-text text-lighten-4">menu</i></a>
+        
+
+
+       <!-- Regular Navigation -->
+        <ul class="hide-on-med-and-down">
           <li> <a href="#" class="brand-logo right"><image class="responsive-img" src="images/Oleum_Banner-03.png"></a></li>
 			       <li><a href="#section1" class="brown-text text-lighten-4">Intro</a></li>
 			       <li><a href="#section2" class="brown-text text-lighten-4">About</a></li>
@@ -28,7 +49,7 @@
              <li><a href="#section5" class="brown-text text-lighten-4">Benefits</a></li>
              <li><a href="#section6" class="brown-text text-lighten-4">Alternatives</a></li>
         </ul>
-
+        <!-- Regular navigation -->
 		</nav>
     </div>
 
@@ -283,64 +304,116 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
   
-  <div id="section3" class="parallax-container scrollspy grey darken-3">
-  
-        <div class="">
+  <div id="section3" class="scrollspy grey darken-3">
+    <div class="row center ight orange-text text-lighten-4">
+      <h3>Bitumen fountains</h3>
+          <h4 style="padding-bottom:50px;">History of the Oil Sands</h4>
 
-          <!-- History Card -->
-          <div class="card ">
-            <div class="card-content orange-text text-lighten-4 grey darken-3 center">
-              <h3>History of the Oil Sands</h3>
+            <div id="timeline">
+                <div class="dot" id="one">
+                  <span></span>
+                  <date>1750</date>
+                </div>
+                <div class="dot" id="two">
+                  <span></span>
+                  <date>1780</date>
+                </div>
+                <div class="dot" id="three">
+                  <span></span>
+                  <date>1870</date>
+                </div>
+                <div class="dot" id="four">
+                  <span></span>
+                  <date>1890</date>
+                </div>
+                <div class="dot" id="five">
+                  <span></span>
+                  <date>1920</date>
+                </div>
+                <div class="dot" id="six">
+                  <span></span>
+                  <date>1930</date>
+                </div>
+                <div class="dot" id="seven">
+                  <span></span>
+                  <date>1960</date>
+                </div>
+                <div class="dot" id="eight">
+                  <span></span>
+                  <date>1970</date>
+                </div>
+                <div class="dot" id="nine">
+                  <span></span>
+                  <date>1990</date>
+                </div>
+                <div class="dot" id="ten">
+                  <span></span>
+                  <date>2010</date>
+                </div>
+                <div class="inside"></div>
             </div>
-            
-            <div class="card-tabs">
-              <ul class="tabs tabs-fixed-width grey darken-2">
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test1">Prior to 1750</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2 active" href="#test2">1751</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test3">1788</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test4">1875</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test5">1894</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test6">1914</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test7">1920-1940</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test8">1923-1925</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test9">1928</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test10">1938</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test11">1964</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test12">1967</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test13">1973</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test14">1978</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test15">Mid-1990s</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test16">2016</a></li>
-              </ul>
-            </div>
-            
-            <div class="card-content grey darken-3 center">
-              <div id="test1"><img class="responsive-img" src="images/old1.jpg"><p> Bitumen and oil was known to the Aboriginal Peoples of Canada. Cree and Dene Peoples smeared bitumen on canoes to waterproof them.</p></div>
-              <div id="test2"><img class="responsive-img" src="images/old2.jpg"><p>James Knight, Factor of Fort York, a Hudson’s Bay Company outpost, wrote about “gum or pitch that flows out of the banks of a river” - the bitumen found on the Athabasca River banks.</p></div>
-              <div id="test3"><img class="responsive-img" src="images/old3.jpg"><p>Sir Alexander Mackenzie wrote that he encountered “bituminous fountains” and was able to insert a 20 foot long pole into the earth “without the least resistance.” He wrote: “The bitumen is in a fluid state, and when mixed with gum or the resinous substance collected from Spruce Fir, serves to gum the canoes.”</p></div>
-              <div id="test4"><img class="responsive-img" src="images/old1.jpg"><p>The Geological Survey of Canada registers the oil sands</p></div>
-              <div id="test5"><img class="responsive-img" src="images/old2.jpg"><p>The Canadian Parliament provides $7,000 to begin drilling for oil in the Athabasca region. Southern Ontario had recently discovered oil pools just beneath the earth’s surface, and the hope was that Alberta would have a similar resource.</p></div>
-              <div id="test6"><img class="responsive-img" src="images/old3.jpg"><p>The Geological Survey of Canada establishes a program to study road materials across Canada.</p></div>
-              <div id="test7"><img class="responsive-img" src="images/old1.jpg"><p>Bitumount is the first private oil extraction plant, created by Robert Fitzsimmons.</p></div>
-              <div id="test8"><img class="responsive-img" src="images/old2.jpg"><p>Karl Clark, a scientist from Georgetown, Ontario, solves the oil sands’ extraction problem with his innovative hot water solution. In 1927, he writes: “General conditions in the oil industry are not yet propitious for the development of the Alberta bituminous sands for manufacture of gasoline. But the recent improvements of the cracking process have opened up an almost unlimited outlet for separated bitumen which will be taken advantage of when the demand for crude oil becomes more keen and its price commences to rise.”</p></div>
-              <div id="test9"><img class="responsive-img" src="images/old3.jpg"><p> Karl Clark submits his hot water invention’s patent</p></div>
-              <div id="test10"><img class="responsive-img" src="images/old1.jpg"><p>Abasand commercial production begins, resulting in 2,500 barrels of oil.</p></div>
-              <div id="test11"><img class="responsive-img" src="images/old2.jpg"><p>Esso breaks ground in Cold Lake, Alberta.</p></div>
-              <div id="test12"><img class="responsive-img" src="images/old3.jpg"><p>Suncor starts production.</p></div>
-              <div id="test13"><img class="responsive-img" src="images/old1.jpg"><p> Arab oil embargo drives up world oil prices, reinvigorating the oil sands.</p></div>
-              <div id="test14"><img class="responsive-img" src="images/old2.jpg"><p> Syncrude starts production.</p></div>
-              <div id="test15"><img class="responsive-img" src="images/old3.jpg"><p>Oil crash, forcing Jean Chretien’s Liberal government to issue tax breaks to the industry.</p></div>
-              <div id="test16"><img class="responsive-img" src="images/old3.jpg"><p>Fort McMurray, Alberta’s largest oil sands site, ravaged by a massive wildfire. Production is temporarily halted.</p></div>
-            </div>
+
+            <!-- Modals -->
+            <div class="poser">
+              <article class='one hactive'>
+                <date>1750 , 1751</date>
+                <h2>Yo les gars</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+              </article>
+
+
+            <article class='two'>
+              <date>1788</date>
+              <h2>Salut les louzeurs</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+
+            <article class='three'>
+              <date>1875</date>
+              <h2>Eat 'em all !</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+
+            <article class='four'>
+              <date>1894</date>
+              <h2>Mais pourquoi?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+            <article class='five'>
+              <date>1914, 1920 - 1940, 1923 - 1925</date>
+              <h2> Eat Em All</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+            <article class='six'>
+              <date>1928, 1938</date>
+              <h2>1928, 1938</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+            <article class='seven'>
+              <date>1964, 1967</date>
+              <h2>1964, 1967</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+            <article class='eight'>
+              <date>1973, 1978</date>
+              <h2>1973, 1978</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+            <article class='nine'>
+              <date>mid 1990's</date>
+              <h2>Mais pourquoi?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
+            <article class='ten'>
+              <date>2016</date>
+              <h2>Mais pourquoi?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta, quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas, accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+            </article>
         </div>
-        <!-- End History Card -->
 
 
-
-
-        </div>
-      <!--<div class="parallax"><img src="images/PURPLESANDS.jpg"></div> -->     
-    </div>
+  </div> 
+</div>
 
 <!-- PHASE OUT SECTION-->
        <!-- PHASE OUT SECTION-->
@@ -871,6 +944,8 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/bodymovin.js"></script>
   <script src="js/init.js"></script>

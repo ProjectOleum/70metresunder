@@ -94,5 +94,159 @@ var introPlayer = document.querySelector('.banner__video');
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+/* stuff below for timeline items */
+$('.dot:nth-child(1)').click(function(){
+  $('.inside').animate({
+    'width' : '5%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.one').addClass('hactive');
+});
+$('.dot:nth-child(2)').click(function(){
+  $('.inside').animate({
+    'width' : '15%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.two').addClass('hactive');
+});
+$('.dot:nth-child(3)').click(function(){
+  $('.inside').animate({
+    'width' : '25%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.three').addClass('hactive');
+});
+$('.dot:nth-child(4)').click(function(){
+  $('.inside').animate({
+    'width' : '35%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.four').addClass('hactive');
+});
+$('.dot:nth-child(5)').click(function(){
+  $('.inside').animate({
+    'width' : '45%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.five').addClass('hactive');
+});
+$('.dot:nth-child(6)').click(function(){
+  $('.inside').animate({
+    'width' : '55%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.six').addClass('hactive');
+});
+$('.dot:nth-child(7)').click(function(){
+  $('.inside').animate({
+    'width' : '65%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.seven').addClass('hactive');
+});
+$('.dot:nth-child(8)').click(function(){
+  $('.inside').animate({
+    'width' : '75%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.eight').addClass('hactive');
+});
+$('.dot:nth-child(9)').click(function(){
+  $('.inside').animate({
+    'width' : '85%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.nine').addClass('hactive');
+});
+$('.dot:nth-child(10)').click(function(){
+  $('.inside').animate({
+    'width' : '95%'
+  }, 500);
+  $('article').removeClass('hactive');
+  $('.ten').addClass('hactive');
+});
+
+
+
+
+/* stuff above for timeline items */
+
+
+
+
+
+
+/*
+
+if ($('#switch1').not(':checked')){
+ $('.modal').unwrap('<div class="mask"></div>');
+    $('.modal').hide();
+    $('.modal').addClass('nobox');
+    $('.dot').click(function(){
+    var modal = $(this).attr('id');
+    $('article.nobox').hide()
+    $('article.nobox.' + modal).fadeIn(200)
+	});
+
+    $('.dot').click(function(){
+      var modal = $(this).attr('id');
+      $('.mask').has('article.' + modal).fadeIn(300);
+      $('.mask article.' + modal).fadeIn(0).animate({
+        'top' : '50%'
+      }, 300);
+    });
+}
+$("#switch1").click(function(){
+  if ($('#switch1').is(':checked')){
+    $('.modal').unwrap('<div class="mask"></div>');
+    $('.modal').hide();
+    $('.modal').addClass('nobox');
+    $('.dot').click(function(){
+    var modal = $(this).attr('id');
+    $('article.nobox').hide()
+    $('article.nobox.' + modal).fadeIn(200)
+	});
+  } else {
+    $('article').removeClass("nobox");
+    $('.modal').wrap('<div class="mask"></div>')
+    $('.mask').click(function(){
+      $(this).fadeOut(300);
+      $('.mask article').animate({
+        'top' : '50%'
+      }, 300)
+    });
+
+    $('.dot').click(function(){
+      var modal = $(this).attr('id');
+      $('.mask').has('article.' + modal).fadeIn(300);
+      $('.mask article.' + modal).fadeIn(0).animate({
+        'top' : '50%'
+      }, 300);
+    });
+  }
+})
+*/
+
+
+
+
+
+
+
+
 })(jQuery); // end of jQuery name space
+
+
+
+
+
