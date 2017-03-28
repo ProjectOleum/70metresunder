@@ -16,10 +16,31 @@
 <body class="grey darken-3">
             
 
-     <div class="navbar-fixed center">
+     <div class="navbar-fixed center"  style="z-index:1000000000;">
      	<nav class="grey darken-4 z-depth-2">
        
-        <ul>
+
+        <ul id="slide-out" class="side-nav grey darken-3">
+          <li><div class="userView">
+            <div class="background">
+              <img src="images/2011Sands.png">
+            </div>
+            <a href="#!user"><img class="circle" src="images/O-Nav.png"></a>
+            <a href="#!name"><span class="white-text name">Project Oleum</span></a>
+          </div></li>
+          <li ><a href="#section1" class="waves-effect white-text">Intro</a></li>
+          <li><a href="#section2" class="waves-effect white-text">About</a></li>
+          <li><a href="#section3" class="waves-effect white-text">History</a></li>
+          <li><a href="#section4" class="waves-effect white-text">Change</a></li>
+          <li><a href="#section5" class="waves-effect white-text">Benefits</a></li>
+          <li><a href="#section5" class="waves-effect white-text">Alternatives</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse "><i class="material-icons brown-text text-lighten-4">menu</i></a>
+        
+
+
+       <!-- Regular Navigation -->
+        <ul class="hide-on-med-and-down">
           <li> <a href="#" class="brand-logo right"><image class="responsive-img" src="images/Oleum_Banner-03.png"></a></li>
 			       <li><a href="#section1" class="brown-text text-lighten-4">Intro</a></li>
 			       <li><a href="#section2" class="brown-text text-lighten-4">About</a></li>
@@ -28,7 +49,7 @@
              <li><a href="#section5" class="brown-text text-lighten-4">Benefits</a></li>
              <li><a href="#section6" class="brown-text text-lighten-4">Alternatives</a></li>
         </ul>
-
+        <!-- Regular navigation -->
 		</nav>
     </div>
 
@@ -254,12 +275,26 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
       </div>
 
       <!-- Map from Above -->
-      <div class="row center no-padding">
+      <div class="row">
+        <h5 class="center orange-text text-lighten-4"> Environmental Impact</h5>
         <!--<div class="parallax-container">
           <div class="parallax"><img src="images/MapAthabaska.jpg"></div>
           <image class="responsive-img" src="images/MapAthabaska.jpg">-->
-          <div class="container">
-            <div id="interactive-map"></div>
+          <div class="container col s6" style="position:relative;">
+            <!--<div id="interactive-map"></div>-->
+            <img class="responsive-img" src="images/1984Sands.png" style="position:relative; top:0px; left:0px;">
+            <img class="responsive-img mapover" src="images/2011Sands.png" style="position:absolute; top:0px; left:10px;">
+          </div>
+          <div class="container col s6">
+            <!--<div id="interactive-map"></div>-->
+            <div class="card-panel" style="width:100%; height:100%;">
+              <h5 class="card-title">Before - 1984 </h5>
+              <span class="">I will contain imformation about the state of the oil sands for before and after etc..
+              </span>
+              <h5 class="card-title">After - 2011 </h5>
+              <span class="">I will contain imformation about the state of the oil sands for before and after etc..
+              </span>
+            </div>
           </div>
 
         </div>
@@ -271,64 +306,130 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
   
-  <div id="section3" class="parallax-container scrollspy grey darken-3">
-  
-        <div class="container">
 
-          <!-- History Card -->
-          <div class="card ">
-            <div class="card-content orange-text text-lighten-4 grey darken-3 center">
-              <h3>History of the Oil Sands</h3>
+  <div id="section3" class="scrollspy grey darken-3">
+    <div class="row center ight orange-text text-lighten-4">
+      <h3>Bitumen fountains</h3>
+          <h4 style="padding-bottom:50px;">History of the Oil Sands</h4>
+
+            <div id="timeline">
+                <div class="dot" id="one">
+                  <span></span>
+                  <date>1750</date>
+                </div>
+                <div class="dot" id="two">
+                  <span></span>
+                  <date>1780</date>
+                </div>
+                <div class="dot" id="three">
+                  <span></span>
+                  <date>1870</date>
+                </div>
+                <div class="dot" id="four">
+                  <span></span>
+                  <date>1890</date>
+                </div>
+                <div class="dot" id="five">
+                  <span></span>
+                  <date>1920</date>
+                </div>
+                <div class="dot" id="six">
+                  <span></span>
+                  <date>1930</date>
+                </div>
+                <div class="dot" id="seven">
+                  <span></span>
+                  <date>1960</date>
+                </div>
+                <div class="dot" id="eight">
+                  <span></span>
+                  <date>1970</date>
+                </div>
+                <div class="dot" id="nine">
+                  <span></span>
+                  <date>1990</date>
+                </div>
+                <div class="dot" id="ten">
+                  <span></span>
+                  <date>2010</date>
+                </div>
+                <div class="inside"></div>
             </div>
-                                
-            <div class="card-tabs">
-              <ul class="tabs tabs-fixed-width grey darken-2">
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test1">Prior to 1750</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2 active" href="#test2">1751</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test3">1788</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test4">1875</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test5">1894</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test6">1914</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test7">1920-1940</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test8">1923-1925</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test9">1928</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test10">1938</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test11">1964</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test12">1967</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test13">1973</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test14">1978</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test15">Mid-1990s</a></li>
-                <li class="tab"><a class="brown-text text-lighten-2" href="#test16">2016</a></li>
-              </ul>
-            </div>
-            
-            <div class="card-content grey darken-3 center">
-              <div id="test1"><img class="responsive-img" src="images/old1.jpg"><p> Bitumen and oil was known to the Aboriginal Peoples of Canada. Cree and Dene Peoples smeared bitumen on canoes to waterproof them.</p></div>
-              <div id="test2"><img class="responsive-img" src="images/old2.jpg"><p>James Knight, Factor of Fort York, a Hudson’s Bay Company outpost, wrote about “gum or pitch that flows out of the banks of a river” - the bitumen found on the Athabasca River banks.</p></div>
-              <div id="test3"><img class="responsive-img" src="images/old3.jpg"><p>Sir Alexander Mackenzie wrote that he encountered “bituminous fountains” and was able to insert a 20 foot long pole into the earth “without the least resistance.” He wrote: “The bitumen is in a fluid state, and when mixed with gum or the resinous substance collected from Spruce Fir, serves to gum the canoes.”</p></div>
-              <div id="test4"><img class="responsive-img" src="images/old1.jpg"><p>The Geological Survey of Canada registers the oil sands</p></div>
-              <div id="test5"><img class="responsive-img" src="images/old2.jpg"><p>The Canadian Parliament provides $7,000 to begin drilling for oil in the Athabasca region. Southern Ontario had recently discovered oil pools just beneath the earth’s surface, and the hope was that Alberta would have a similar resource.</p></div>
-              <div id="test6"><img class="responsive-img" src="images/old3.jpg"><p>The Geological Survey of Canada establishes a program to study road materials across Canada.</p></div>
-              <div id="test7"><img class="responsive-img" src="images/old1.jpg"><p>Bitumount is the first private oil extraction plant, created by Robert Fitzsimmons.</p></div>
-              <div id="test8"><img class="responsive-img" src="images/old2.jpg"><p>Karl Clark, a scientist from Georgetown, Ontario, solves the oil sands’ extraction problem with his innovative hot water solution. In 1927, he writes: “General conditions in the oil industry are not yet propitious for the development of the Alberta bituminous sands for manufacture of gasoline. But the recent improvements of the cracking process have opened up an almost unlimited outlet for separated bitumen which will be taken advantage of when the demand for crude oil becomes more keen and its price commences to rise.”</p></div>
-              <div id="test9"><img class="responsive-img" src="images/old3.jpg"><p> Karl Clark submits his hot water invention’s patent</p></div>
-              <div id="test10"><img class="responsive-img" src="images/old1.jpg"><p>Abasand commercial production begins, resulting in 2,500 barrels of oil.</p></div>
-              <div id="test11"><img class="responsive-img" src="images/old2.jpg"><p>Esso breaks ground in Cold Lake, Alberta.</p></div>
-              <div id="test12"><img class="responsive-img" src="images/old3.jpg"><p>Suncor starts production.</p></div>
-              <div id="test13"><img class="responsive-img" src="images/old1.jpg"><p> Arab oil embargo drives up world oil prices, reinvigorating the oil sands.</p></div>
-              <div id="test14"><img class="responsive-img" src="images/old2.jpg"><p> Syncrude starts production.</p></div>
-              <div id="test15"><img class="responsive-img" src="images/old3.jpg"><p>Oil crash, forcing Jean Chretien’s Liberal government to issue tax breaks to the industry.</p></div>
-              <div id="test16"><img class="responsive-img" src="images/old3.jpg"><p>Fort McMurray, Alberta’s largest oil sands site, ravaged by a massive wildfire. Production is temporarily halted.</p></div>
-            </div>
+
+            <!-- Modals -->
+            <div class="poser">
+              <article class='t one hactive'>
+                <date>1750 , 1751</date>
+                <h3 class="left-align">Prior to 1750:</h3>
+                <p class="left-align"> Bitumen and oil was known to the Aboriginal Peoples of Canada. Cree and Dene Peoples smeared bitumen on canoes to waterproof them.</p>
+                <h3 class="left-align">1751:</h3>
+                <p class="left-align"> James Knight, Factor of Fort York, a Hudson’s Bay Company outpost, wrote about “gum or pitch that flows out of the banks of a river” - the bitumen found on the Athabasca River banks.</p>
+              </article>
+
+
+            <article class='t two post'>
+              <date>1788</date>
+              <h3 class="left-align">1788:</h3>
+              <p class="left-align">Sir Alexander Mackenzie wrote that he encountered “bituminous fountains” and was able to insert a 20 foot long pole into the earth “without the least resistance.” He wrote: “The bitumen is in a fluid state, and when mixed with gum or the resinous substance collected from Spruce Fir, serves to gum the canoes.”
+</p>
+            </article>
+
+            <article class='t three post'>
+              <date>1875</date>
+              <h3 class="left-align">1875: </h3>
+              <p class="left-align">The Geological Survey of Canada registers the oil sands</p>
+            </article>
+
+            <article class='t four post'>
+              <date>1894</date>
+              <h3 class="left-align">1894: </h3>
+              <p class="left-align">The Canadian Parliament provides $7,000 to begin drilling for oil in the Athabasca region. Southern Ontario had recently discovered oil pools just beneath the earth’s surface, and the hope was that Alberta would have a similar resource.</p>
+            </article>
+            <article class='t five post'>
+              <date>1920 - 1940, 1923 - 1925</date>
+              <h3 class="left-align"> 1920 - 1940</h3>
+              <p class="left-align">Bitumount is the first private oil extraction plant, created by Robert Fitzsimmons.</p>
+              <h3 class="left-align"> 1923-1925:</h3>
+              <p class="left-align">Karl Clark, a scientist from Georgetown, Ontario, solves the oil sands’ extraction problem with his innovative hot water solution. In 1927, he writes: “General conditions in the oil industry are not yet propitious for the development of the Alberta bituminous sands for manufacture of gasoline. But the recent improvements of the cracking process have opened up an almost unlimited outlet for separated bitumen which will be taken advantage of when the demand for crude oil becomes more keen and its price commences to rise.”
+</p>
+            </article>
+            <article class='t six post'>
+              <date>1928, 1938</date>
+              <h3 class="left-align">1928</h3>
+              <p class="left-align">Karl Clark submits his hot water invention’s patent</p>
+              <h3 class="left-align">1938</h3>
+              <p class="left-align">Abasand commercial production begins, resulting in 2,500 barrels of oil.
+</p>
+            </article>
+            <article class='t seven post'>
+              <date>1964, 1967</date>
+              <h3 class="left-align">1964</h3>
+              <p class="left-align">Esso breaks ground in Cold Lake, Alberta.</p>
+              <h3 class="left-align">1967</h3>
+              <p class="left-align"> Suncor starts production.</p>
+            </article>
+            <article class='t eight post'>
+              <date>1973, 1978</date>
+              <h3 class="left-align">1973</h3>
+              <p class="left-align"> Arab oil embargo drives up world oil prices, reinvigorating the oil sands.</p>
+              <h3 class="left-align">1978</h3>
+              <p class="left-align">Syncrude starts production.</p>
+            </article>
+            <article class='t nine post'>
+              <date>mid 1990's</date>
+              <h3 class="left-align">Mid 1990's:</h3>
+              <p class="left-align"> Oil crash, forcing Jean Chretien’s Liberal government to issue tax breaks to the industry.</p>
+            </article>
+            <article class='t ten post'>
+              <date>2016</date>
+              <h3 class="left-align">2016:</h3>
+              <p class="left-align"> Fort McMurray, Alberta’s largest oil sands site, ravaged by a massive wildfire. Production is temporarily halted. </p>
+            </article>
         </div>
-        <!-- End History Card -->
 
 
-
-
-        </div>
-      <!--<div class="parallax"><img src="images/PURPLESANDS.jpg"></div> -->     
-    </div>
+  </div> 
+</div>
 
 <!-- PHASE OUT SECTION-->
        <!-- PHASE OUT SECTION-->
@@ -343,11 +444,12 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
         <div class="row">
           <h5 class="header center col s12 orange-text text-lighten-4">Phasing them Out?</h5>
 
-            <div  id="section2" class=" col s6 scrollspy">
+            <div  id="section2" class=" col s12 scrollspy">
               <div class="icon-block">
                 <h5 class="center orange-text light text-lighten-4">Possible?</h5>
-                <p class="light orange-text text-lighten-4">
-                  &emsp;&emsp;As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
+
+                <p class="light orange-text text-lighten-4 left-align">
+                  As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
   &emsp;&emsp;The argument against the oil sands is simple: they’re detrimental to the environment and they tie Canada’s economy to an unsustainable resource.<br>
   &emsp;&emsp;  The vitality of the oil industry to the Canadian dollar personifies itself in the dollar’s nickname - the oil loonie. Employment, economic success, the dollar, equalization payments between the provinces, the price of oil: all those factors are tied into the oil industry’s success, and with it, Canada’s.</p>
   <img style="width:100%;padding:30px 0 20px" src="/images/video_placeholder.jpg"/>
@@ -381,7 +483,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
               </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s12">
               <div class="icon-block">
                 <img style="width:100%;padding:55px 0 10px" src="/images/global_truduea_phaseout.jpg"/>
                 <p class="light orange-text text-lighten-4">
@@ -408,24 +510,29 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
 
+
+
+
 <!------ GREEN ENERGY SECTION START -->
  <div id="section5" class="section scrollspy grey darken-3">
     <div class="section no-pad-bot">
-      <div class="container light">
-        <div class="row center">
+      <div class="light">
+        <div class="container row center">
           <h5 class="header orange-text text-lighten-4">Who would benefit?</h5>
           <p class="orange-text text-lighten-4">Discourse over the oil sands as they are today - and the future of the valuable bitumen lying beneath the surface - is heavily charged. Views range from considering bitumen as a vital part of the Albertan economy and a resource to be exploited, to the belief that the oil sands production should be shut down immediately. Here’s a look into the views of major stakeholders in Canada and abroad.</p>
         </div>
+
+
     <!-- This is the shit in the card -->
 <div class="row">
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">PM Justin Trudeau<i class="material-icons right">perm_contact_calendar</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">PM Justin Trudeau</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Prime Minister Justin Trudeau<i class="material-icons right">close</i></span>
@@ -439,15 +546,14 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
               <!-- This is the shit in the card -->
     <!-- This is the shit in the card -->
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">F-PM Stephen Harper<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">F-PM Stephen Harper</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Former Prime Minister Stephen Harper<i class="material-icons right">close</i></span>
@@ -458,14 +564,14 @@ play_arrow</i></span>
       </div>
 
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Premier Rachel Notley (NDP)<i class="material-icons right">perm_contact_calendar</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Premier Rachel Notley (NDP)</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Premier Rachel Notley<i class="material-icons right">close</i></span>
@@ -474,15 +580,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Wild Rose Party of Alberta<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Wild Rose Party of Alberta</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Wild Rose Party of Alberta<i class="material-icons right">close</i></span>
@@ -490,15 +595,14 @@ play_arrow</i></span>
           </div>
         </div>
       </div>
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">First Nations Communities<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">First Nations Communities</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">First Nations Communities<i class="material-icons right">close</i></span>
@@ -510,15 +614,14 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
         </div>
       </div>
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Progressive Conservative Party of Alberta<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Progressive Conservative Party of Alberta</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -532,15 +635,14 @@ play_arrow</i></span>
               <!-- This is the shit in the card -->
     <!-- This is the shit in the card -->
 
-        <div class="col l3 m4 s6">
+        <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Keith McGrath<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Keith McGrath</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Keith McGrath<i class="material-icons right">close</i></span>
@@ -550,15 +652,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Phil Meager<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Phil Meager</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Phil Meager<i class="material-icons right">close</i></span>
@@ -567,15 +668,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Greenpeace<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Greenpeace</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Greenpeace<i class="material-icons right">close</i></span>
@@ -585,15 +685,14 @@ play_arrow</i></span>
       </div>
 
 
-        <div class="col l3 m4 s6">
+        <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Shell Oil<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Shell Oil</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Shell Oil<i class="material-icons right">close</i></span>
@@ -602,15 +701,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-        <div class="col l3 m4 s6">
+        <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Suncor Energy<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">Suncor Energy</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Suncor Energy<i class="material-icons right">close</i></span>
@@ -619,15 +717,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">SunCor Energy<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">SunCor Energy</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -636,15 +733,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-        <div class="col l3 m4 s6">
+        <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">President Donald Trump<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">President Donald Trump</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">President Donald Trump<i class="material-icons right">close</i></span>
@@ -653,15 +749,14 @@ play_arrow</i></span>
         </div>
       </div>
 
-      <div class="col l3 m4 s6">
+      <div class="col l4 m6 s12">
          <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="images/icon-01.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">TransCanada Corp<i class="material-icons right">
-play_arrow</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="card-title activator grey-text text-darken-4">TransCanada Corp</span>
+            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">TransCanada Corp<i class="material-icons right">close</i></span>
@@ -708,7 +803,16 @@ play_arrow</i></span>
 <!--</div>
 
    <!-- Benefits SECTION -->
-
+   <!-- Benefits SECTION -->   <!-- Benefits SECTION -->
+      <!-- Benefits SECTION -->
+         <!-- Benefits SECTION -->
+            <!-- Benefits SECTION -->
+               <!-- Benefits SECTION -->
+                  <!-- Benefits SECTION -->
+                     <!-- Benefits SECTION -->
+                        <!-- Benefits SECTION -->
+                           <!-- Benefits SECTION -->
+                              <!-- Benefits SECTION -->
 
 
 <div id="section6" class="section scrollspy grey darken-2">
@@ -878,6 +982,8 @@ play_arrow</i></span>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/bodymovin.js"></script>
   <script src="js/init.js"></script>
