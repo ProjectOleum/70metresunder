@@ -46,6 +46,37 @@ div#timeline .dot {
 
 
 
+
+.buttonContainer{
+  position: relative;
+}
+.prev{
+  position:absolute;
+  left:2%;
+  margin-top: 15%;
+  z-index: 99999;
+  opacity: 0.6;
+}
+.next{
+  position:absolute;
+  margin-top: 15%;
+  right:2%;
+  z-index: 99999;
+  opacity: 0.6;
+}
+
+.scont {
+  width: 100%;
+  padding:1%;
+}
+
+.siema {
+  margin: 1rem 0;
+}
+
+
+
+
 /* DOTS PLUS NAMES = Screenspace divided 16 */
 div#timeline .dot:nth-child(1) {
   left: 5%;
