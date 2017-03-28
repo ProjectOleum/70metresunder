@@ -482,11 +482,19 @@ p {
   font-size: inherit;
 }
 
+img.responsive-img.renewables {
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
 
+h5.renewable-title {
+    padding: 37px 0 0 6px;
+}
 
-
-
-
+.collapsible-body {
+    background-color: white;
+}
 
 
 
