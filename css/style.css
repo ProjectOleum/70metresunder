@@ -89,7 +89,8 @@ div#timeline .dot:nth-child(10) {
  position: relative;
  padding: 20px;
  background-color: #424242;
- height: 500px;
+ height: 600px;
+ overflow:hidden;
 }
 
 article{
@@ -99,8 +100,29 @@ article{
   padding: 50px;
   margin: auto;
   left:100%;
+  overflow:hidden;
+  visibility: hidden;
   transition:all 0.5s;
 }
+/*
+article.post{
+  position: absolute;
+  width: 80%;
+  background-color: #212121;
+  padding: 50px;
+  margin: auto;
+  left:100%;
+  transition:all 0.5s;
+}
+article.prior{
+  position: absolute;
+  width: 80%;
+  background-color: #212121;
+  padding: 50px;
+  margin: auto;
+  left:100%;
+  transition:all 0.5s;
+}*/
 article.hactive{
   position: absolute;
   width: 80%;
@@ -108,8 +130,10 @@ article.hactive{
   padding: 50px;
   margin: auto;
   left:10%;
+  visibility: visible;
   transition:all 0.5s;
 }
+
 
 
 article date {
@@ -126,10 +150,6 @@ article h2 {
 article p {
   line-height: 130%;
 }
-
-
-
-
 
 
 div#timeline .dot:hover {

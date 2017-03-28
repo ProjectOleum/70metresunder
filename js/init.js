@@ -110,7 +110,9 @@ $('.dot:nth-child(1)').click(function(){
     'width' : '5%'
   }, 500);
   $('article').removeClass('hactive');
+  $('article').removeClass('prior');
   $('.one').addClass('hactive');
+  $('.two').addClass('post');
 });
 $('.dot:nth-child(2)').click(function(){
   $('.inside').animate({
@@ -118,6 +120,8 @@ $('.dot:nth-child(2)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.two').addClass('hactive');
+  $('.one').addClass('prior');
+  $('.three').addClass('post');
 });
 $('.dot:nth-child(3)').click(function(){
   $('.inside').animate({
@@ -125,6 +129,8 @@ $('.dot:nth-child(3)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.three').addClass('hactive');
+  $('.two').addClass('prior');
+  $('.four').addClass('post');
 });
 $('.dot:nth-child(4)').click(function(){
   $('.inside').animate({
@@ -132,6 +138,8 @@ $('.dot:nth-child(4)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.four').addClass('hactive');
+  $('.three').addClass('prior');
+  $('.five').addClass('post');
 });
 $('.dot:nth-child(5)').click(function(){
   $('.inside').animate({
@@ -139,6 +147,8 @@ $('.dot:nth-child(5)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.five').addClass('hactive');
+  $('.four').addClass('prior');
+  $('.six').addClass('post');
 });
 $('.dot:nth-child(6)').click(function(){
   $('.inside').animate({
@@ -146,6 +156,8 @@ $('.dot:nth-child(6)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.six').addClass('hactive');
+  $('.five').addClass('prior');
+  $('.seven').addClass('post');
 });
 $('.dot:nth-child(7)').click(function(){
   $('.inside').animate({
@@ -153,6 +165,8 @@ $('.dot:nth-child(7)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.seven').addClass('hactive');
+  $('.six').addClass('prior');
+  $('.eight').addClass('post');
 });
 $('.dot:nth-child(8)').click(function(){
   $('.inside').animate({
@@ -160,6 +174,8 @@ $('.dot:nth-child(8)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.eight').addClass('hactive');
+  $('.seven').addClass('prior');
+  $('.nine').addClass('post');
 });
 $('.dot:nth-child(9)').click(function(){
   $('.inside').animate({
@@ -167,13 +183,17 @@ $('.dot:nth-child(9)').click(function(){
   }, 500);
   $('article').removeClass('hactive');
   $('.nine').addClass('hactive');
+  $('.eight').addClass('prior');
+  $('.ten').addClass('post');
 });
 $('.dot:nth-child(10)').click(function(){
   $('.inside').animate({
     'width' : '95%'
   }, 500);
   $('article').removeClass('hactive');
+  $('article').removeClass('post');
   $('.ten').addClass('hactive');
+  $('.nine').addClass('prior');
 });
 
 
