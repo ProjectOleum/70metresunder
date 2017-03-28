@@ -105,11 +105,13 @@
             <a-assets>
               <a-asset-item id="tree" src="test-scene/snow_tree.dae">
               <a-asset-item id="refinery" src="test-scene/oil_refinery.dae">
+              <a-asset-item id="wind" src="test-scene/WindTurbine.gltf"></a-asset-item>
               <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
               <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
             </a-assets>
 
             <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
+            <a-entity position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" gltf-model="#wind"></a-entity>
             
             <!-- Background sky. -->
             <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
@@ -304,6 +306,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
   
+
   <div id="section3" class="scrollspy grey darken-3">
     <div class="row center ight orange-text text-lighten-4">
       <h3>Bitumen fountains</h3>
@@ -442,25 +445,26 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
     
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 orange-text text-lighten-4">Phasing them Out?</h5>
+        <div class="row">
+          <h5 class="header center col s12 orange-text text-lighten-4">Phasing them Out?</h5>
 
             <div  id="section2" class=" col s12 scrollspy">
               <div class="icon-block">
-                <h2 class="center orange-text text-lighten-4"><i class="material-icons">invert_colors_off</i></h2>
                 <h5 class="center orange-text light text-lighten-4">Possible?</h5>
+
                 <p class="light orange-text text-lighten-4 left-align">
                   As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
   &emsp;&emsp;The argument against the oil sands is simple: they’re detrimental to the environment and they tie Canada’s economy to an unsustainable resource.<br>
-  &emsp;&emsp;  The vitality of the oil industry to the Canadian dollar personifies itself in the dollar’s nickname - the oil loonie. Employment, economic success, the dollar, equalization payments between the provinces, the price of oil: all those factors are tied into the oil industry’s success, and with it, Canada’s.<br>
-  &emsp;&emsp;  The oil industry is one of Canada’s largest employers, with 400,000 people employed in the oil industry or one of its support sectors. In 2014, royalties from synthetic crude oil and bitumen accounted for nearly 55 per cent of Alberta’s non-renewable resource revenue. Between 1999 and 2013, $201 billion was invested in the industry.<br>
-  &emsp;&emsp;“Until there’s a natural resource that can replace oil as we know it today, it’s our most valuable asset, and not just in Western Canada,” said Keith McGrath, a ward councillor for the Regional Municipality of Wood Buffalo, which includes the city of Fort McMurray. “Look at the oil we’re taking out of the bottom of the ocean in Atlantic Canada, and it’s valuable for everybody. It creates jobs, it gives people healthcare, it gives people education, it’s a full, real deal.”<br>
+  &emsp;&emsp;  The vitality of the oil industry to the Canadian dollar personifies itself in the dollar’s nickname - the oil loonie. Employment, economic success, the dollar, equalization payments between the provinces, the price of oil: all those factors are tied into the oil industry’s success, and with it, Canada’s.</p>
+  <img style="width:100%;padding:30px 0 20px" src="/images/video_placeholder.jpg"/>
+  <p class="light orange-text text-lighten-4">
   &emsp;&emsp;Of the world’s oil reserves, 80 per cent are owned by governments or government-owned oil companies. Canada’s oil sands represent 50 per cent of the remaining 20 per cent open for investment.<br>
   &emsp;&emsp;“Across Alberta, [oil is] the industry that determines almost all of our livelihoods,” said Andrew Leach, an environmental economist at the University of Alberta and chair of Alberta’s 2015 Climate Change Advisory Panel. “So in the period that we’ve seen recently, you’ve had a significant employment downturn and increase in unemployment rates. Beyond that, what you’ve seen is a very large labour market impact concentrated in particular areas and particular skillsets.”<br>
   &emsp;&emsp;Low oil prices have slowed down Alberta’s economy, and the province is suffering from job loss and slow growth. A government worker or teacher in Edmonton is not as impacted by the downturn as a rig worker in Red Deer might be, said Leach.<br>
-  &emsp;&emsp;“So you have this serious hit that is also very unevenly distributed through the province.”<br>
-  &emsp;&emsp;Alberta might be most significantly hit by hard times in the oil industry, but the effects are nationwide. When Fort McMurray was ravaged by a massive wildfire that forced regional evacuations and temporarily halted oil production, Canada’s GDP dropped significantly. The second quarter of 2016 saw Canada’s worst performance since the 2008 recession, with the GDP falling 1.6 per cent in a single quarter.<br>
-  &emsp;&emsp;Canada’s equalization payment system -- which dubs some provinces as have provinces and some as have not provinces -- is meant to spread the wealth equitably across Canada. The federal government makes payments to have not provinces, and does not make payments to have provinces.<br>
+  &emsp;&emsp;“So you have this serious hit that is also very unevenly distributed through the province.”
+</p>
+  <img style="width:100%;padding:30px 0 20px" src="/images/video_placeholder.jpg"/>
+  <p class="light orange-text text-lighten-4">
   &emsp;&emsp;Alberta hasn’t received an equalization payment since 1963.<br>
   &emsp;&emsp;“Alberta...has sent out $12 billion in equalization payments to the rest of the country,” said Robert Hage, a former Canadian diplomat and Principal Counsel for the Canada-U.S. Free Trade Agreement. “So it’s not just Alberta that has been affected by the downturn. It’s the whole country: our dollar has dropped, the demands on the canadian manufacturing sector after the recession has been hit hard and hasn’t been able to fill in the gap that has been left by the decline of oil resources.”<br>
   &emsp;&emsp;For Albertans, the oil industry can be personal. The price of oil - an abstract decimal decided by foreign markets and influences out of their control - can wreak havoc on their livelihoods during poor times and lead to wealth and security during the good.<br>
@@ -485,9 +489,14 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
             <div class="col s12">
               <div class="icon-block">
-                <h2 class="center orange-text text-lighten-4 "><i class="material-icons">invert_colors</i></h2>
-                <h5 class="center orange-text text-lighten-4 light">Impossible?</h5>
-
+                <img style="width:100%;padding:55px 0 10px" src="/images/global_truduea_phaseout.jpg"/>
+                <p class="light orange-text text-lighten-4">
+                  &emsp;&emsp;  The oil industry is one of Canada’s largest employers, with 400,000 people employed in the oil industry or one of its support sectors. In 2014, royalties from synthetic crude oil and bitumen accounted for nearly 55 per cent of Alberta’s non-renewable resource revenue. Between 1999 and 2013, $201 billion was invested in the industry.<br>
+                  &emsp;&emsp;“Until there’s a natural resource that can replace oil as we know it today, it’s our most valuable asset, and not just in Western Canada,” said Keith McGrath, a ward councillor for the Regional Municipality of Wood Buffalo, which includes the city of Fort McMurray. “Look at the oil we’re taking out of the bottom of the ocean in Atlantic Canada, and it’s valuable for everybody. It creates jobs, it gives people healthcare, it gives people education, it’s a full, real deal.”<br>
+                </p>
+                <img style="width:100%;padding:30px 0 20px" src="/images/nationalnewwatch_trudeau_notley.jpg"/>
+                <p class="light orange-text text-lighten-4">&emsp;&emsp;Alberta might be most significantly hit by hard times in the oil industry, but the effects are nationwide. When Fort McMurray was ravaged by a massive wildfire that forced regional evacuations and temporarily halted oil production, Canada’s GDP dropped significantly. The second quarter of 2016 saw Canada’s worst performance since the 2008 recession, with the GDP falling 1.6 per cent in a single quarter.<br>
+                &emsp;&emsp;Canada’s equalization payment system -- which dubs some provinces as have provinces and some as have not provinces -- is meant to spread the wealth equitably across Canada. The federal government makes payments to have not provinces, and does not make payments to have provinces.</p>
               </div>
             </div>
           </div>
@@ -826,39 +835,40 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
   &emsp;&emsp;As more and more countries sign onto international climate change agreements and enact stricter emissions policies, renewable energies are coming into mainstream use. Canada’s vast landmass and plentiful natural resources equip the country to exploit natural resources in a renewable way.</p>
             </div>
         </div>        
-        <ul class="collapsible" data-collapsible="accordion">
+        <ul class="collapsible popout" data-collapsible="accordion">
               <li>
-                <div class="collapsible-header">Hydro Electric</div>
+                <div class="collapsible-header"><div class="row"><div class="col s6"><h5 class="renewable-title right ">Hydro Electric</h5></div> <div class="col s6"><img class="responsive-img renewables left" src="images/renewables/hydro.png"/></div></div></div>
                 <div class="collapsible-body">
                   <span>Canada’s multitude of waterways and widespread adaptation of hydropower have made Canada the second largest producer of hydroelectricity in the world. Canada had 542 hydroelectric stations as of 2014.</span>
                 </div>
               </li>
               <li>
-                <div class="collapsible-header">Bioenergy</div>
+                <div class="collapsible-header"><div class="row"><div class="col s6"><h5 class="renewable-title right">Bioenergy</h5></div> <div class="col s6"><img class="responsive-img renewables left" src="images/renewables/biomass.png"/></div></div></div>
                 <div class="collapsible-body">
                   <span>Bioenergy is contained in a biomass, a biological substance that contains chemical energy produced by sunlight. In 2014, Canada had 70 bioenergy power plants and Canada’s biofuel energy production accounted for 2 per cent of the world’s total.</span>
                 </div>
               </li>
               <li>
-                <div class="collapsible-header">Wind Energy</div>
+                <div class="collapsible-header"><div class="row"><div class="col s6"><h5 class="renewable-title right">Wind Energy</h5></div><div class="col s6"><img class="responsive-img renewables left" src="images/renewables/wind.png"/></div></div></div>
                 <div class="collapsible-body">
                   <span>Wind power’s plentifulness and consistency has caused Canada’s wind energy use to skyrocket in the last two decades. On the last day of 2014, Canada had 5,130 wind turbines in use across the country.</span>
+                  <iframe id="aframe" src="test-scene/index.html?ui=false"></iframe>
                 </div>
               </li>
               <li>
-                <div class="collapsible-header">Solar Energy</div>
+                <div class="collapsible-header"><div class="row"><div class="col s6"><h5 class="renewable-title right">Solar Energy</h5></div><div class="col s6"><img class="responsive-img renewables left " src="images/renewables/solar.png"/></div></div></div>
                 <div class="collapsible-body">
                   <span>Harnessing the sun’s power is called solar energy, and its use varies across Canada. Areas of the country that are generally overcast or cloudy cannot rely as heavily on solar energies as sunnier regions. As such, Canada’s usage of solar energy has increased in recent years, but has not become commonplace.</span>
                 </div>
               </li>
               <li>
-                <div class="collapsible-header">Geothermal Energy</div>
+                <div class="collapsible-header"><div class="row"><div class="col s6"><h5 class="renewable-title right">Geothermal Energy</h5></div><div class="col s6"><img class="responsive-img renewables left" src="images/renewables/geothermal.png"/></div></div></div>
                 <div class="collapsible-body">
                   <span>Western Canada and the territories have begun utilizing geothermal energy. British Columbia, Alberta, the Northwest Territories and the Yukon capture energy emitted from under the earth’s surface to produce electricity.</span>
                 </div>
               </li>
               <li>
-                <div class="collapsible-header">Tidal Energy</div>
+                <div class="collapsible-header"><div class="row"><div class="col s6"><h5 class="renewable-title right">Tidal Energy</h5></div><div class="col s6"><img class="responsive-img renewables left" src="images/renewables/tidal.png"/></div></div></div>
                 <div class="collapsible-body">
                   <span>Canada’s eastern coast has explored energy from tidal sources. Canada’s coastal nature means that the potential for capturing the ocean’s energy via tides is possible, but has not been widely implemented. The Bay of Fundy in Nova Scotia sees some of the largest vertical tides at 16 metres or more, and has become a hotspot for tidal power exploration.</span>
                 </div>

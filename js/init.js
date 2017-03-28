@@ -29,7 +29,7 @@ $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 
 
-
+/*
 var _interactiveMap = document.getElementById('interactive-map');
 
 var interactiveMap = bodymovin.loadAnimation({
@@ -41,7 +41,7 @@ var interactiveMap = bodymovin.loadAnimation({
   autoloadSegments: false,
   path: '/js/data.json'
 });
-
+*/
 var intro = document.querySelector('.banner');
 var introPlayer = document.querySelector('.banner__video');
 
