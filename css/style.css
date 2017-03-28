@@ -10,7 +10,11 @@
 Stuff added
 
 */
-
+*,
+ *::after, 
+ *::before {
+  box-sizing: border-box;
+}
 /* stuff for new timeline */
 
 div#timeline {
@@ -93,36 +97,41 @@ div#timeline .dot:nth-child(10) {
  overflow:hidden;
 }
 
-article{
+/*article{
   position: absolute;
   width: 80%;
   background-color: #212121;
   padding: 50px;
   margin: auto;
+  right:100%;
   left:100%;
   overflow:hidden;
   visibility: hidden;
   transition:all 0.5s;
-}
-/*
-article.post{
-  position: absolute;
-  width: 80%;
-  background-color: #212121;
-  padding: 50px;
-  margin: auto;
-  left:100%;
-  transition:all 0.5s;
-}
+}*/
+
+
+
 article.prior{
   position: absolute;
   width: 80%;
   background-color: #212121;
   padding: 50px;
   margin: auto;
-  left:100%;
+  left:-200%;
+  visibility: hidden;
   transition:all 0.5s;
-}*/
+}
+article.post{
+  position: absolute;å
+  width: 80%;
+  background-color: #212121;
+  padding: 50px;
+  margin: auto;
+  left:100%;
+  visibility: hidden;
+  transition:all 0.5s;
+}
 article.hactive{
   position: absolute;
   width: 80%;
@@ -130,15 +139,16 @@ article.hactive{
   padding: 50px;
   margin: auto;
   left:10%;
+  right:10%;
   visibility: visible;
   transition:all 0.5s;
 }
 
 
-
 article date {
   display: block;
   text-align: right;
+    transition:all 0.5s;
 }
 article h2 {
   font-family: merriweather, sans-serif;
@@ -146,9 +156,11 @@ article h2 {
   padding: 10px 0;
   border-bottom: solid #111 2px;
   margin-bottom: 20px;
+    transition:all 0.5s;
 }
 article p {
   line-height: 130%;
+    transition:all 0.5s;
 }
 
 
