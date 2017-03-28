@@ -84,11 +84,13 @@
             <a-assets>
               <a-asset-item id="tree" src="test-scene/snow_tree.dae">
               <a-asset-item id="refinery" src="test-scene/oil_refinery.dae">
+              <a-asset-item id="wind" src="test-scene/WindTurbine.gltf"></a-asset-item>
               <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
               <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
             </a-assets>
 
             <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
+            <a-entity position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" gltf-model="#wind"></a-entity>
             
             <!-- Background sky. -->
             <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
@@ -278,7 +280,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
             <div class="card-content orange-text text-lighten-4 grey darken-3 center">
               <h3>History of the Oil Sands</h3>
             </div>
-            
+                                
             <div class="card-tabs">
               <ul class="tabs tabs-fixed-width grey darken-2">
                 <li class="tab"><a class="brown-text text-lighten-2" href="#test1">Prior to 1750</a></li>
@@ -338,25 +340,25 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
     
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 orange-text text-lighten-4">Phasing them Out?</h5>
+        <div class="row">
+          <h5 class="header center col s12 orange-text text-lighten-4">Phasing them Out?</h5>
 
             <div  id="section2" class=" col s6 scrollspy">
               <div class="icon-block">
-                <h2 class="center orange-text text-lighten-4"><i class="material-icons">invert_colors_off</i></h2>
                 <h5 class="center orange-text light text-lighten-4">Possible?</h5>
                 <p class="light orange-text text-lighten-4">
-                  As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
+                  &emsp;&emsp;As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
   &emsp;&emsp;The argument against the oil sands is simple: they’re detrimental to the environment and they tie Canada’s economy to an unsustainable resource.<br>
-  &emsp;&emsp;  The vitality of the oil industry to the Canadian dollar personifies itself in the dollar’s nickname - the oil loonie. Employment, economic success, the dollar, equalization payments between the provinces, the price of oil: all those factors are tied into the oil industry’s success, and with it, Canada’s.<br>
-  &emsp;&emsp;  The oil industry is one of Canada’s largest employers, with 400,000 people employed in the oil industry or one of its support sectors. In 2014, royalties from synthetic crude oil and bitumen accounted for nearly 55 per cent of Alberta’s non-renewable resource revenue. Between 1999 and 2013, $201 billion was invested in the industry.<br>
-  &emsp;&emsp;“Until there’s a natural resource that can replace oil as we know it today, it’s our most valuable asset, and not just in Western Canada,” said Keith McGrath, a ward councillor for the Regional Municipality of Wood Buffalo, which includes the city of Fort McMurray. “Look at the oil we’re taking out of the bottom of the ocean in Atlantic Canada, and it’s valuable for everybody. It creates jobs, it gives people healthcare, it gives people education, it’s a full, real deal.”<br>
+  &emsp;&emsp;  The vitality of the oil industry to the Canadian dollar personifies itself in the dollar’s nickname - the oil loonie. Employment, economic success, the dollar, equalization payments between the provinces, the price of oil: all those factors are tied into the oil industry’s success, and with it, Canada’s.</p>
+  <img style="width:100%;padding:30px 0 20px" src="/images/video_placeholder.jpg"/>
+  <p class="light orange-text text-lighten-4">
   &emsp;&emsp;Of the world’s oil reserves, 80 per cent are owned by governments or government-owned oil companies. Canada’s oil sands represent 50 per cent of the remaining 20 per cent open for investment.<br>
   &emsp;&emsp;“Across Alberta, [oil is] the industry that determines almost all of our livelihoods,” said Andrew Leach, an environmental economist at the University of Alberta and chair of Alberta’s 2015 Climate Change Advisory Panel. “So in the period that we’ve seen recently, you’ve had a significant employment downturn and increase in unemployment rates. Beyond that, what you’ve seen is a very large labour market impact concentrated in particular areas and particular skillsets.”<br>
   &emsp;&emsp;Low oil prices have slowed down Alberta’s economy, and the province is suffering from job loss and slow growth. A government worker or teacher in Edmonton is not as impacted by the downturn as a rig worker in Red Deer might be, said Leach.<br>
-  &emsp;&emsp;“So you have this serious hit that is also very unevenly distributed through the province.”<br>
-  &emsp;&emsp;Alberta might be most significantly hit by hard times in the oil industry, but the effects are nationwide. When Fort McMurray was ravaged by a massive wildfire that forced regional evacuations and temporarily halted oil production, Canada’s GDP dropped significantly. The second quarter of 2016 saw Canada’s worst performance since the 2008 recession, with the GDP falling 1.6 per cent in a single quarter.<br>
-  &emsp;&emsp;Canada’s equalization payment system -- which dubs some provinces as have provinces and some as have not provinces -- is meant to spread the wealth equitably across Canada. The federal government makes payments to have not provinces, and does not make payments to have provinces.<br>
+  &emsp;&emsp;“So you have this serious hit that is also very unevenly distributed through the province.”
+</p>
+  <img style="width:100%;padding:30px 0 20px" src="/images/video_placeholder.jpg"/>
+  <p class="light orange-text text-lighten-4">
   &emsp;&emsp;Alberta hasn’t received an equalization payment since 1963.<br>
   &emsp;&emsp;“Alberta...has sent out $12 billion in equalization payments to the rest of the country,” said Robert Hage, a former Canadian diplomat and Principal Counsel for the Canada-U.S. Free Trade Agreement. “So it’s not just Alberta that has been affected by the downturn. It’s the whole country: our dollar has dropped, the demands on the canadian manufacturing sector after the recession has been hit hard and hasn’t been able to fill in the gap that has been left by the decline of oil resources.”<br>
   &emsp;&emsp;For Albertans, the oil industry can be personal. The price of oil - an abstract decimal decided by foreign markets and influences out of their control - can wreak havoc on their livelihoods during poor times and lead to wealth and security during the good.<br>
@@ -381,9 +383,14 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
             <div class="col s6">
               <div class="icon-block">
-                <h2 class="center orange-text text-lighten-4 "><i class="material-icons">invert_colors</i></h2>
-                <h5 class="center orange-text text-lighten-4 light">Impossible?</h5>
-
+                <img style="width:100%;padding:55px 0 10px" src="/images/global_truduea_phaseout.jpg"/>
+                <p class="light orange-text text-lighten-4">
+                  &emsp;&emsp;  The oil industry is one of Canada’s largest employers, with 400,000 people employed in the oil industry or one of its support sectors. In 2014, royalties from synthetic crude oil and bitumen accounted for nearly 55 per cent of Alberta’s non-renewable resource revenue. Between 1999 and 2013, $201 billion was invested in the industry.<br>
+                  &emsp;&emsp;“Until there’s a natural resource that can replace oil as we know it today, it’s our most valuable asset, and not just in Western Canada,” said Keith McGrath, a ward councillor for the Regional Municipality of Wood Buffalo, which includes the city of Fort McMurray. “Look at the oil we’re taking out of the bottom of the ocean in Atlantic Canada, and it’s valuable for everybody. It creates jobs, it gives people healthcare, it gives people education, it’s a full, real deal.”<br>
+                </p>
+                <img style="width:100%;padding:30px 0 20px" src="/images/nationalnewwatch_trudeau_notley.jpg"/>
+                <p class="light orange-text text-lighten-4">&emsp;&emsp;Alberta might be most significantly hit by hard times in the oil industry, but the effects are nationwide. When Fort McMurray was ravaged by a massive wildfire that forced regional evacuations and temporarily halted oil production, Canada’s GDP dropped significantly. The second quarter of 2016 saw Canada’s worst performance since the 2008 recession, with the GDP falling 1.6 per cent in a single quarter.<br>
+                &emsp;&emsp;Canada’s equalization payment system -- which dubs some provinces as have provinces and some as have not provinces -- is meant to spread the wealth equitably across Canada. The federal government makes payments to have not provinces, and does not make payments to have provinces.</p>
               </div>
             </div>
           </div>
@@ -752,6 +759,22 @@ play_arrow</i></span>
                 <div class="collapsible-header">Wind Energy</div>
                 <div class="collapsible-body">
                   <span>Wind power’s plentifulness and consistency has caused Canada’s wind energy use to skyrocket in the last two decades. On the last day of 2014, Canada had 5,130 wind turbines in use across the country.</span>
+                  <iframe id="aframe" src="test-scene/index.html?ui=false"></iframe>
+<!--
+                  <a-scene embedded style="height:400px;width:100%;">
+                  
+                    <a-assets>
+                      <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+                      <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+                    </a-assets>
+                    <a-entity position="0 0 -1.5" scale="0.05 0.05 0.05" animation-mixer json-model="src: url(test-scene/WindTurbine5.js);"></a-entity>
+
+                   
+                    <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+
+                  
+                    <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
+                  </a-scene>-->
                 </div>
               </li>
               <li>

@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="description" content="Test Scene">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.3.4/dist/aframe-extras.min.js"></script>
+
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,13 +17,16 @@
   <body>
     
     <a-scene>
-    <!-- for embedded make tag above like this -> <a-scene embedded style="z-index:10">-->
+    <!-- for embedded make tag above like this -->
       <a-assets>
         <a-asset-item id="tree" src="snow_tree.dae">
         <a-asset-item id="refinery" src="oil_refinery.dae">
+        <a-asset-item id="wind" src="WindTurbine.dae"></a-asset-item>
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        <a-asset-item id="windg" src="WindTurbine.json"></a-asset-item>
       </a-assets>
+      <a-entity position="0 0 -1.5" scale="0.05 0.05 0.05" animation-mixer json-model="src: url(WindTurbine5.js);"></a-entity>
 
       <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
       
@@ -31,7 +36,7 @@
       <!-- Ground. -->
       <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
 
-    </a-scene>  
+    </a-scene> 
       
           
     
