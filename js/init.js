@@ -249,9 +249,15 @@ $('.dot:nth-child(10)').click(function(){
 
 
 
+   $("#audio").click( function (){
+       $("#vid").prop('muted', !$("#vid").prop('muted'));
+       $('#tog').toggleClass('muter unmuter');
+   });
 
 
-
+	$(".tog").click(function(){
+	  $('img',this).toggle();
+	});
 /*
 
 if ($('#switch1').not(':checked')){

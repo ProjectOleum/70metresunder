@@ -33,7 +33,7 @@
           <li><a href="#section3" class="waves-effect white-text">History</a></li>
           <li><a href="#section4" class="waves-effect white-text">Change</a></li>
           <li><a href="#section5" class="waves-effect white-text">Benefits</a></li>
-          <li><a href="#section5" class="waves-effect white-text">Alternatives</a></li>
+          <li><a href="#section6" class="waves-effect white-text">Alternatives</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse "><i class="material-icons brown-text text-lighten-4">menu</i></a>
         
@@ -55,7 +55,7 @@
 
 
     <!-- Start of autoplayVideo Container-->
-    <div class="video-container">
+    <div class="video-container hov">
 
       <div class="row center">
       <!-- start Overlay -->
@@ -65,7 +65,7 @@
       </div><!-- ENd Overlay -->
         
         <!-- Start if video-->
-        <video autoplay loop muted class="banner__video">
+        <video id="vid" autoplay loop muted class="banner__video">
           <source src="trudeau_OilSands.mp4" type="video/mp4">
         </video>
 
@@ -75,7 +75,11 @@
           <!-- for LARGE SCREENS and stuff too -->
       <div class="container mute-button"> 
           
-          <a class="btn-floating btn-large waves-effect waves-light blue-grey lighten-2 right"><i class="material-icons z-depth-5">volume_off</i></a>
+          <a id="audio" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-2 right"><div class="tog">
+                      <img class="responsive-img ico" style="display:visible;" src="images/icons/muteV1.png" />
+                      <img class="responsive-img ico" style="display:none;" src="images/icons/volume.png" />
+                   </div>
+          </a>
           <h4 class="right white-text">Title: <br>The title of this stuff</h4>
           
         </div> 
@@ -95,7 +99,7 @@
 <!-- Container for VR Content -->
 <!-- Container for VR Content -->
 <!-- Container for VR Content -->
-<div id="section 1"class="section grey darken-3 scrollspy ">
+<div id="section1"class="section grey darken-3 scrollspy ">
       <!--   Icon Section   -->
       <div class="container center">
         <div class="col s12">
@@ -177,7 +181,7 @@
 <!-- Container for About Content -->
 <!-- Container for About Content -->
 <!-- Container for About Content -->
- <div class="section blue-grey darken-2">
+ <div id="section2" class="section blue-grey darken-2">
   <div class="">
       <!--   Icon Section   -->
       <div class="row center orange-text text-lighten-4 container">
@@ -241,61 +245,35 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
   <div class="orange-text text-lighten-4 divider"></div>
-      <div class="section">
-        <div class="row center">
-          <h5 class="center orange-text text-lighten-4">Extraction Process</h5>
-          <div class="col s4">
-              <div class="icon-block">
-                <img class="responsive-img" src="images/bitumen1.png">
-                <h5 class="center orange-text text-lighten-4">Bitumen</h5>
 
-                <p class="light brown-text "></p>
-              </div>
-            </div>
-
-            <div class="col s4">
-              <div class="icon-block">
-                <img class="responsive-img" src="images/water1.png">
-                <h5 class="center orange-text text-lighten-4">Water</h5>
-
-                <p class="light orange-text text-lighten-4 "></p>
-              </div>
-            </div>
-            
-            <div class="col s4">
-              <div class="icon-block">
-              <img class="responsive-img" src="images/bw3.png">
-                <h5 class="center orange-text text-lighten-4">Bitumen Water</h5>
-
-                <p class="light orange-text text-lighten-4"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Map from Above -->
-      <div class="row">
+      <div class="row center">
         <h5 class="center orange-text text-lighten-4"> Environmental Impact</h5>
         <!--<div class="parallax-container">
           <div class="parallax"><img src="images/MapAthabaska.jpg"></div>
           <image class="responsive-img" src="images/MapAthabaska.jpg">-->
-          <div class="container col s6" style="position:relative;">
+          <div class="container col l4 m6 s12 center" style="position:relative; display:block; margin:auto; max-width: 500px;">
             <!--<div id="interactive-map"></div>-->
-            <img class="responsive-img" src="images/1984Sands.png" style="position:relative; top:0px; left:0px;">
-            <img class="responsive-img mapover" src="images/2011Sands.png" style="position:absolute; top:0px; left:10px;">
+            <img class="responsive-img" src="images/1984Sands.png" style="position:relative; top:0px;">
+            <img class="center responsive-img mapover" src="images/2011Sands.png" style="position:absolute; top:0px; display:block;">
           </div>
-          <div class="container col s6">
+          <div class="container col l8 m6 s12">
             <!--<div id="interactive-map"></div>-->
             <div class="card-panel" style="width:100%; height:100%;">
               <h5 class="card-title">Before - 1984 </h5>
-              <span class="">I will contain imformation about the state of the oil sands for before and after etc..
-              </span>
-              <h5 class="card-title">After - 2011 </h5>
-              <span class="">I will contain imformation about the state of the oil sands for before and after etc..
+              <span class="">The extraction process’ environmental impact is the main argument critics raise against the oil sands.
               </span>
             </div>
-          </div>
+            <div class="card-panel" style="width:100%; height:100%;">
+              <h5 class="card-title">After - 2011 </h5>
+              <span class="">Environmentalists also raise concerns that open pit mining destroys ecosystems when the land is cleared, and that tar sands are detrimental to the environment. 
+              </span>
+            </div>
+            <div class="card-panel" style="width:100%; height:100%;">
+              <span class="">Extracting bitumen is carbon intensive, and greenhouse gas emissions from the Albertan oil sands are an estimated five to 15 per cent higher than conventional crude oil extraction.
+              </span>
+            </div>
 
         </div>
       </div>
@@ -423,7 +401,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
             <article class='t ten post'>
               <date>2000 - Present</date>
               <h3 class="left-align">2000s:</h3>
-              <p class="left-align"> The oil sands industry transforms from megaproject mines and upgraders to “more manageable phased in-situ <a href="http://static1.squarespace.com/static/557705f1e4b0c73f726133e1/t/55f9c9e1e4b0c00ab5cf2d3e/1442433505501/CERI+Study+152+-+Final+Report.pdf">growth</a>.” </p>
+              <p class="left-align"> The oil sands industry transforms from megaproject mines and upgraders to “more manageable phased in-situ growth.” <a href="http://static1.squarespace.com/static/557705f1e4b0c73f726133e1/t/55f9c9e1e4b0c00ab5cf2d3e/1442433505501/CERI+Study+152+-+Final+Report.pdf"><i class="material-icons">launch</i></a></p>
               <h3 class="left-align">2016:</h3>
               <p class="left-align">International Energy Agency’s World Energy Outlook report predicts steady growth for Canadian oil production, hitting 6.1 million barrels a day by 2040.</p>
               <div class="divider orange lighten-4"></div>
@@ -448,10 +426,8 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
         <div class="row">
           <h5 class="header center col s12 orange-text text-lighten-4">Phasing them Out?</h5>
 
-            <div  id="section2" class=" col s12 scrollspy">
+            <div  id="section2" class=" col s6 scrollspy">
               <div class="icon-block">
-                <h5 class="center orange-text light text-lighten-4">Possible?</h5>
-
                 <p class="light orange-text text-lighten-4 left-align">
                   As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
   &emsp;&emsp;The argument against the oil sands is simple: they’re detrimental to the environment and they tie Canada’s economy to an unsustainable resource.<br>
@@ -487,7 +463,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
               </div>
             </div>
 
-            <div class="col s12">
+            <div class="col s6">
               <div class="icon-block">
                 <img style="width:100%;padding:55px 0 10px" src="/images/global_truduea_phaseout.jpg"/>
                 <p class="light orange-text text-lighten-4">
@@ -702,7 +678,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">         
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal1"><img class="modal-trigger" src="images/benefits/TrudeauJustin.jpg"></a>
+                <a class="modal-trigger" href="#modal1"><img class="modal-trigger" src="images/benefits/JT.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Prime Minister Justin Trudeau</span>
@@ -715,7 +691,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">         
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal2"><img class="activator" src="images/benefits/HarperStephen-01.jpg"></a>
+                <a class="modal-trigger" href="#modal2"><img class="activator" src="images/benefits/sHarp.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Former Prime Minister Stephen Harper</span>
@@ -727,7 +703,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal3"><img src="images/benefits/premierRachelNotley.jpg"></a>
+                <a class="modal-trigger" href="#modal3"><img src="images/benefits/Rach.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Premier Rachel Notley (NDP)</span>
@@ -740,7 +716,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal4"><img src="images/benefits/WRP.png"></a>
+                <a class="modal-trigger" href="#modal4"><img src="images/benefits/WRP1.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Wild Rose Party of Alberta</span>
@@ -753,7 +729,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal5"><img src="images/icon-01.png"></a>
+                <a class="modal-trigger" href="#modal5"><img src="images/benefits/abor-01.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title grey-text text-darken-4">Aboriginal Peoples</span>
@@ -766,7 +742,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal6"><img src="images/benefits/KeithMcGrath.jpg"></a>
+                <a class="modal-trigger" href="#modal6"><img src="images/benefits/Keith.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title grey-text text-darken-4">Keith McGrath</span>
@@ -779,7 +755,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal7"><img src="images/benefits/Meagher.jpg">
+                <a class="modal-trigger" href="#modal7"><img src="images/benefits/Meagher.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Phil Meagher</span>
@@ -794,7 +770,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal8"><img src="images/benefits/Greenpeace.png"></a>
+                <a class="modal-trigger" href="#modal8"><img src="images/benefits/greabpeace.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Greenpeace Canada</span>
@@ -807,7 +783,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal9"><img src="images/benefits/Shell.jpg"></a>
+                <a class="modal-trigger" href="#modal9"><img src="images/benefits/shell.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Royal Dutch Shell Plc</span>
@@ -820,7 +796,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#Amodal"><img src="images/benefits/suncor.jpeg"></a>
+                <a class="modal-trigger" href="#Amodal"><img src="images/benefits/SunCor.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Suncor Energy Inc.</span>
@@ -832,7 +808,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal11"><img src="images/benefits/Donald.jpg"></a>
+                <a class="modal-trigger" href="#modal11"><img src="images/benefits/Don.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">President Donald Trump</span>
@@ -844,7 +820,7 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <div class="scont">
              <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <a class="modal-trigger" href="#modal12"><img src="images/icon-01.png"></a>
+                <a class="modal-trigger" href="#modal12"><img src="images/benefits/TCCorp.png"></a>
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">TransCanada Corp</span>
