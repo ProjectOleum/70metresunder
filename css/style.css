@@ -17,23 +17,6 @@ Stuff added
 }
 
 
-#spriteContainer {
-      width: 300px;
-      height: 300px;
-      display: block;
-      background-image: url("css/spritesRecycle.png");
-      animation: sprite 3s steps(24) infinite;
-  }
- 
-@keyframes sprite {
- 100% {
-
- }
-}
-
-
-
-
 
 
 
@@ -78,14 +61,14 @@ div#timeline .dot {
   left:2%;
   margin-top: 15%;
   z-index: 99999;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .next{
   position:absolute;
   margin-top: 15%;
   right:2%;
   z-index: 99999;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .scont {
@@ -495,6 +478,19 @@ div.mask article p {
 Stuff added
 
 */
+
+img.responsive-img.small {
+    width: 50px;
+    height:auto;
+  }
+img.responsive-img.med {
+    width: 100px;
+    height:auto;
+  }
+  img.responsive-img.large {
+    width: 500px;
+    height:auto;
+  }
 
 
 .muter{
