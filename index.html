@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
  
  
@@ -33,7 +36,7 @@
           <li><a href="#section3" class="waves-effect white-text">History</a></li>
           <li><a href="#section4" class="waves-effect white-text">Change</a></li>
           <li><a href="#section5" class="waves-effect white-text">Benefits</a></li>
-          <li><a href="#section5" class="waves-effect white-text">Alternatives</a></li>
+          <li><a href="#section6" class="waves-effect white-text">Alternatives</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse "><i class="material-icons brown-text text-lighten-4">menu</i></a>
         
@@ -55,7 +58,7 @@
 
 
     <!-- Start of autoplayVideo Container-->
-    <div class="video-container">
+    <div class="video-container hov">
 
       <div class="row center">
       <!-- start Overlay -->
@@ -65,7 +68,7 @@
       </div><!-- ENd Overlay -->
         
         <!-- Start if video-->
-        <video autoplay loop muted class="banner__video">
+        <video id="vid" autoplay loop muted class="banner__video">
           <source src="trudeau_OilSands.mp4" type="video/mp4">
         </video>
 
@@ -75,7 +78,11 @@
           <!-- for LARGE SCREENS and stuff too -->
       <div class="container mute-button"> 
           
-          <a class="btn-floating btn-large waves-effect waves-light blue-grey lighten-2 right"><i class="material-icons z-depth-5">volume_off</i></a>
+          <a id="audio" class="btn-floating btn-large waves-effect waves-light blue-grey lighten-2 right"><div class="tog">
+                      <img class="responsive-img ico" style="display:visible;" src="images/icons/muteV1.png" />
+                      <img class="responsive-img ico" style="display:none;" src="images/icons/volume.png" />
+                   </div>
+          </a>
           <h4 class="right white-text">Title: <br>The title of this stuff</h4>
           
         </div> 
@@ -95,7 +102,7 @@
 <!-- Container for VR Content -->
 <!-- Container for VR Content -->
 <!-- Container for VR Content -->
-<div id="section 1"class="section grey darken-3 scrollspy ">
+<div id="section1"class="section grey darken-2 scrollspy ">
       <!--   Icon Section   -->
       <div class="container center">
         <div class="col s12">
@@ -125,9 +132,15 @@
       </div>
         
 <div class="row container">
-        <div class="col s6 container left-align">
-             <p class="light orange-text text-lighten-4"> What would become one of Canada’s most valuable economic resources was deemed worthless at first glance.<br>
-&emsp;&emsp; In 1719, a Cree man named Wapasu brought a sample of bitumen to Henry Kelsey, a Hudson Bay Company explorer. Bitumen -- a dark, tarlike substance composed of sand, clay, oil and water -- would naturally seep out of the Athabasca River banks, its presence long known by Aboriginal Peoples in Canada. Wapasu’s sample, which was likely the first bitumen encountered by Europeans, was considered useless.<br>
+
+  <div class="row center" style="padding-top:10px;">
+     <p class="light orange-text text-lighten-4"> What would become one of Canada’s most valuable economic resources was deemed worthless at first glance.</p>
+      <img class="responsive-img" src="images/icons/oil-01.png">
+  </div>
+
+        <div class="col s6 container left-align center">
+             <p class="light orange-text text-lighten-4">
+&emsp;&emsp; In 1719, a Cree man named Wapasu brought a sample of bitumen to Henry Kelsey, a Hudson Bay Company explorer. Bitumen -- a dark, tarlike substance composed of sand, clay, oil and water -- naturally seeped out of the Athabasca River banks. The early explorers were charting the region of Canada that would be known, centuries later, as the oil sands, where bitumen lies under the surface. Bitumen’s presence was long known by Aboriginal Peoples in Canada, who used it to waterproof their canoes. Kelsey considered Wapasu’s sample, which was likely to the first bitumen encountered by Europeans, to be useless.<br>
   &emsp;&emsp;Three centuries later, bitumen has proven its worth on a global scale. The oil sands play a dominant part in Canada’s energy sector and the oil harvested from the sands comprises 97 per cent of Canada’s proven oil reserves. Oil is in constant global demand, and Canada has heavily invested and exploited its oil sands to meet that growing need.</p>
 
         </div>
@@ -177,7 +190,7 @@
 <!-- Container for About Content -->
 <!-- Container for About Content -->
 <!-- Container for About Content -->
- <div class="section blue-grey darken-2">
+ <div id="section2" class="section blue-grey darken-2">
   <div class="">
       <!--   Icon Section   -->
       <div class="row center orange-text text-lighten-4 container">
@@ -194,23 +207,37 @@
                                           <!-- Carousel -->
                                                 <!-- Carousel -->
 
-          <div class="carousel carousel-slider center orange-text text-lighten-4" data-indicators="true">
+          <div class="carousel carousel-slider center orange-text text-lighten-4" data-indicators="true" style="height:auto; min-height:500px;">
               <!--<div class="carousel-fixed-item center">
                 <a class="btn waves-effect white grey-text darken-text-2">BUTTON</a>
               </div>-->
               <div class="carousel-item blue-grey darken-3" href="#one!">
-                <h2>Origin of the Oil Sands</h2>
-                <p class="left-align container" style="text-indent: 3em;">Canada is known for its plethora of natural resources - vast forests of green, plentiful waterways tangling the landscape, rolling plains of golden wheat. Metres under the surface of the oil sands, often underneath tons of soil, rock and plantlife, lies bitumen - a resource unlike the rest.</p>
+                <!--<h2>Origin of the Oil Sands</h2>-->
+                <p class="left-align container" style="text-indent: 3em; padding:10px;">Canada is known for its plethora of natural resources - vast forests of green, plentiful waterways tangling the landscape, rolling plains of golden wheat. Metres under the surface of the oil sands, often underneath tons of soil, rock and vegetation, lies bitumen - a resource unlike the rest.</p>
+
+                <div class="" style="width:30%; display:inline-block;">
+                  <img class="responsive-img" src="images/icons/plant.png" style="width:175px; height:auto;">
+                </div>
+                <div class="" style="width:30%; display:inline-block; ">
+                  <img class="responsive-img" src="images/icons/sandCombo2LB.png"  style="width:175px; height:auto;">
+                </div>
+                <div class="" style="width:30%; display:inline-block;">
+                  <img class="responsive-img med" src="images/bsw1.png">
+                </div>
+
                 <p class="left-align container light" style=" font-style: italic; width:50%;" ><br> &emsp;&emsp; “I think for the longest time we have moved from one natural resource to another,” said Stephen Scott, Carleton University’s graduate supervisor of sustainable energy policy. “If you look at the history of Canada, it’s kind of a staples approach; going from cart to beaver pelts to lumber then oil, natural gas. Just taking stuff out of the ground - lots of mining and selling it raw to the world.”</p>
+
+
+
               </div>
               <div class="carousel-item grey darken-3" href="#two!">
-                <h2>Abundance</h2>
+                <!--<h2>Abundance</h2>-->
                 <div>
                   <p class="left-align container"  style="text-indent: 3em;" >Oil is found around the globe, but the oil sands are more unique in nature. The world’s largest oil sands are found in Canada and Venezuela, with smaller pockets found in the United States, Russia, Madagascar and the Republic of Congo.<br><br>&emsp;&emsp;&emsp; Bitumen is a heavy oil. Difficult to extract from both the ground it is in and the sand and clay the oil is mixed with, bitumen presented a challenge to those wanting to extract the valuable oil it contained. Unlike bitumen’s cousin, crude oil, which flows freely and is found in a purer form, bitumen requires purification and warming before resembling the oil within. 
   </p></div>
               </div>
               <div class="carousel-item brown darken-2" href="#three!">
-                <h2>Where it's found</h2>
+                <!--<h2>Where it's found</h2>-->
                 <p class="left-align container">&emsp;&emsp;Oil sands were created millennia ago, when shifting tectonic plates formed the Rocky Mountains and in turn buried the sedimentary rock layers under Alberta. The result was a pressure cooker of heat that transformed shale rock into natural gas and light oil. Because of plate shifting and pinching underground, a tilted tectonic plate allowed light oil to migrate north. There, where the future oil sands would form, microbial biodegradation thicked and immobilized the oil in Northern Alberta. <br><br>&emsp;&emsp;
 Bitumen remained untouched in the oil sands for centuries, tucked deep within the earth, protected by shale and rock and soil. Small dribbles would escape along waterways, where Indigenous Peoples would use the tar-like substance to waterproof their canoes. Early European explorers discounted bitumen, but later pioneers and government researchers realized the commercial possibilities contained in the oil sands.</p>
               </div>
@@ -241,61 +268,35 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
   <div class="orange-text text-lighten-4 divider"></div>
-      <div class="section">
-        <div class="row center">
-          <h5 class="center orange-text text-lighten-4">Extraction Process</h5>
-          <div class="col s4">
-              <div class="icon-block">
-                <img class="responsive-img" src="images/bitumen1.png">
-                <h5 class="center orange-text text-lighten-4">Bitumen</h5>
 
-                <p class="light brown-text "></p>
-              </div>
-            </div>
-
-            <div class="col s4">
-              <div class="icon-block">
-                <img class="responsive-img" src="images/water1.png">
-                <h5 class="center orange-text text-lighten-4">Water</h5>
-
-                <p class="light orange-text text-lighten-4 "></p>
-              </div>
-            </div>
-            
-            <div class="col s4">
-              <div class="icon-block">
-              <img class="responsive-img" src="images/bw3.png">
-                <h5 class="center orange-text text-lighten-4">Bitumen Water</h5>
-
-                <p class="light orange-text text-lighten-4"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Map from Above -->
-      <div class="row">
+      <div class="row center">
         <h5 class="center orange-text text-lighten-4"> Environmental Impact</h5>
         <!--<div class="parallax-container">
           <div class="parallax"><img src="images/MapAthabaska.jpg"></div>
           <image class="responsive-img" src="images/MapAthabaska.jpg">-->
-          <div class="container col s6" style="position:relative;">
+          <div class="container col l4 m6 s12 center" style="position:relative; display:block; margin:auto; max-width: 500px;">
             <!--<div id="interactive-map"></div>-->
-            <img class="responsive-img" src="images/1984Sands.png" style="position:relative; top:0px; left:0px;">
-            <img class="responsive-img mapover" src="images/2011Sands.png" style="position:absolute; top:0px; left:10px;">
+            <img class="responsive-img" src="images/1984Sands.png" style="position:relative; top:0px;">
+            <img class="center responsive-img mapover" src="images/2011Sands.png" style="position:absolute; top:0px; display:block;">
           </div>
-          <div class="container col s6">
+          <div class="container col l8 m6 s12">
             <!--<div id="interactive-map"></div>-->
             <div class="card-panel" style="width:100%; height:100%;">
               <h5 class="card-title">Before - 1984 </h5>
-              <span class="">I will contain imformation about the state of the oil sands for before and after etc..
-              </span>
-              <h5 class="card-title">After - 2011 </h5>
-              <span class="">I will contain imformation about the state of the oil sands for before and after etc..
+              <span class="">The extraction process’ environmental impact is the main argument critics raise against the oil sands.
               </span>
             </div>
-          </div>
+            <div class="card-panel" style="width:100%; height:100%;">
+              <h5 class="card-title">After - 2011 </h5>
+              <span class="">Environmentalists also raise concerns that open pit mining destroys ecosystems when the land is cleared, and that tar sands are detrimental to the environment. 
+              </span>
+            </div>
+            <div class="card-panel" style="width:100%; height:100%;">
+              <span class="">Extracting bitumen is carbon intensive, and greenhouse gas emissions from the Albertan oil sands are an estimated five to 15 per cent higher than conventional crude oil extraction.
+              </span>
+            </div>
 
         </div>
       </div>
@@ -351,7 +352,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
                 </div>
                 <div class="dot" id="ten">
                   <span></span>
-                  <date>2010</date>
+                  <date>2000</date>
                 </div>
                 <div class="inside"></div>
             </div>
@@ -421,8 +422,12 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
               <p class="left-align"> Oil crash, forcing Jean Chretien’s Liberal government to issue tax breaks to the industry.</p>
             </article>
             <article class='t ten post'>
-              <date>2016</date>
+              <date>2000 - Present</date>
+              <h3 class="left-align">2000s:</h3>
+              <p class="left-align"> The oil sands industry transforms from megaproject mines and upgraders to “more manageable phased in-situ growth.” <a href="http://static1.squarespace.com/static/557705f1e4b0c73f726133e1/t/55f9c9e1e4b0c00ab5cf2d3e/1442433505501/CERI+Study+152+-+Final+Report.pdf"><i class="material-icons">launch</i></a></p>
               <h3 class="left-align">2016:</h3>
+              <p class="left-align">International Energy Agency’s World Energy Outlook report predicts steady growth for Canadian oil production, hitting 6.1 million barrels a day by 2040.</p>
+              <div class="divider orange lighten-4"></div>
               <p class="left-align"> Fort McMurray, Alberta’s largest oil sands site, ravaged by a massive wildfire. Production is temporarily halted. </p>
             </article>
         </div>
@@ -437,6 +442,8 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
            <!-- PHASE OUT SECTION-->
              <!-- PHASE OUT SECTION-->
 
+
+
   <div id="section4" class="section scrollspy blue-grey darken-3">
     
     <div class="section no-pad-bot">
@@ -444,10 +451,8 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
         <div class="row">
           <h5 class="header center col s12 orange-text text-lighten-4">Phasing them Out?</h5>
 
-            <div  id="section2" class=" col s12 scrollspy">
+            <div  id="section2" class=" col m6 s6 scrollspy">
               <div class="icon-block">
-                <h5 class="center orange-text light text-lighten-4">Possible?</h5>
-
                 <p class="light orange-text text-lighten-4 left-align">
                   As Prime Minister Justin Trudeau found out, ‘phasing out’ the oil sands is not a simple proposition. <br>
   &emsp;&emsp;The argument against the oil sands is simple: they’re detrimental to the environment and they tie Canada’s economy to an unsustainable resource.<br>
@@ -464,12 +469,18 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
   </div>
   <p class="light orange-text text-lighten-4">
   &emsp;&emsp;Alberta hasn’t received an equalization payment since 1963.<br>
-  &emsp;&emsp;“Alberta...has sent out $12 billion in equalization payments to the rest of the country,” said Robert Hage, a former Canadian diplomat and Principal Counsel for the Canada-U.S. Free Trade Agreement. “So it’s not just Alberta that has been affected by the downturn. It’s the whole country: our dollar has dropped, the demands on the canadian manufacturing sector after the recession has been hit hard and hasn’t been able to fill in the gap that has been left by the decline of oil resources.”<br>
+  &emsp;&emsp;“Alberta...has sent out $12 billion in equalization payments to the rest of the country,” said Robert Hage, a former Canadian diplomat and Principal Counsel for the Canada-U.S. Free Trade Agreement.
+</p>
+      
+
+
+<p>
+   “So it’s not just Alberta that has been affected by the downturn. It’s the whole country: our dollar has dropped, the demands on the canadian manufacturing sector after the recession has been hit hard and hasn’t been able to fill in the gap that has been left by the decline of oil resources.”<br>
+
+  <img style="width:100%;padding:30px 0 20px" src="/images/video_placeholder.jpg"/>
   &emsp;&emsp;For Albertans, the oil industry can be personal. The price of oil - an abstract decimal decided by foreign markets and influences out of their control - can wreak havoc on their livelihoods during poor times and lead to wealth and security during the good.<br>
   &emsp;&emsp;“When the oil price took a tumble, there was a direct correlation to that and the economy that moved jobs, families were disrupted, it was just a tough time,” said McGrath. “And we’re not out of the woods yet. We’re probably looking at a couple more years of tough times. And certainly when the price of oil tanks, there’s a lot of people that tank with it.”<br>
-  &emsp;&emsp;The oil sands industry relies heavily on transportation concerns. Oil is mined and diluted in Alberta, but the lack of Canadian refineries in the oil sands means that crude oil must be transported -- usually long distances -- to refineries. Oil is currently transported in a variety of ways, including road, train and pipeline. The pipeline question, especially involving Keystone XL, is fraught with political and economic tension. <br>
-  &emsp;&emsp;“Now talking about either land, through pipelines, or the sea, through tankers, I think the common thought is that the best thing you can do for transporting oil is to put it in a pipeline,” said Hage.<br>
-  &emsp;&emsp;Mark Barteau, director of the University of Michigan Energy Institute, says that the majority of oil spills in North America are “relatively small.”<br>
+ 
   &emsp;&emsp;“When you do get a leak in the middle of a pipeline, that tends to spill more,” Barteau said. “And depending on the local environment, whether you’re crossing water, whether you’re crossing an aquifer. And how remote the spill is; if it’s more remote, people may be less affected, but it may take you a while longer to realize what’s happening and to detect it. All of those are part of the equation.”<br>
   &emsp;&emsp;  Environmentalists consider pipelines to be yet another danger involving the oil sands. The Keystone XL pipeline was controversial, in part, because of its proposed route near the Nebraska sandhills and the Ogallala Aquifer.<br>
   &emsp;&emsp;  “So we’re basically saying we’re going to be off of fossil fuels by midcentury; it doesn’t make any sense to be building new pipelines, new mines, etcetera, that would have to operate for fifty years in order to be economic,” said Stewart. “We have just over two million barrels worth of production in the oil sands right now, there’s projections to take that to four million or five million barrels per day. That doesn’t make any sense in a world that is moving away from fossil fuels. So first, stop making the problem worse. Stop digging. When you’re in the hole, you stop digging. So no new pipelines, no new mines. No expansion of existing operations.”<br>
@@ -485,7 +496,7 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
               </div>
             </div>
 
-            <div class="col s12">
+            <div class="col m6 s12">
               <div class="icon-block">
                 <img style="width:100%;padding:55px 0 10px" src="/images/global_truduea_phaseout.jpg"/>
                 <p class="light orange-text text-lighten-4">
@@ -495,6 +506,16 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
                 <img style="width:100%;padding:30px 0 20px" src="/images/nationalnewwatch_trudeau_notley.jpg"/>
                 <p class="light orange-text text-lighten-4">&emsp;&emsp;Alberta might be most significantly hit by hard times in the oil industry, but the effects are nationwide. When Fort McMurray was ravaged by a massive wildfire that forced regional evacuations and temporarily halted oil production, Canada’s GDP dropped significantly. The second quarter of 2016 saw Canada’s worst performance since the 2008 recession, with the GDP falling 1.6 per cent in a single quarter.<br>
                 &emsp;&emsp;Canada’s equalization payment system -- which dubs some provinces as have provinces and some as have not provinces -- is meant to spread the wealth equitably across Canada. The federal government makes payments to have not provinces, and does not make payments to have provinces.</p>
+
+                <!-- CLIP 8 -->
+                <div class="video-container">
+                  <iframe width="853" height="480" src="//www.youtube.com/embed/WmSi8-fOSsU" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <p> &emsp;&emsp;The oil sands industry relies heavily on transportation concerns. Oil is mined and diluted in Alberta, but the lack of Canadian refineries in the oil sands means that crude oil must be transported -- usually long distances -- to refineries. Oil is currently transported in a variety of ways, including road, train and pipeline. The pipeline question, especially involving Keystone XL, is fraught with political and economic tension. <br>
+  &emsp;&emsp;“Now talking about either land, through pipelines, or the sea, through tankers, I think the common thought is that the best thing you can do for transporting oil is to put it in a pipeline,” said Hage.<br>
+  &emsp;&emsp;Mark Barteau, director of the University of Michigan Energy Institute, says that the majority of oil spills in North America are “relatively small.”<br></p>
+
               </div>
             </div>
           </div>
@@ -513,9 +534,221 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
 
 
 
+<!-- launch Icon for links 
+<a href=""><i class="material-icons">launch</i></a>-->
 
 
-<!------ GREEN ENERGY SECTION START -->
+  <!-- begin first modal -->
+  <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div>
+          <h4>Prime Minister Justin Trudeau</h4>
+          <p>Prime Minister Justin Trudeau found himself in hot water after he told a town hall crowd that "we can't shut down the oilsands tomorrow. We need to phase them out. We need to manage the transition off of our dependence on fossil fuels. That is going to take time. And, in the meantime, we have to manage that transition." He later went on to retract that statement, saying he misspoke and would continue to support Albertans. The backlash to Trudeau’s statement was immediate, but once he reconfirmed his thoughts and apologized, public opinion tempered. <br/>“I think, in all fairness to Justin Trudeau, that was an off moment,” said McGrath.</p>
+        </div>
+      
+        <div >
+          <video class="responsive-video" controls>
+            <source src="trudeau_OilSands.mp4" type="video/mp4">
+          </video>
+        </div>
+                <audio controls>
+                  <source src="audio/Clip_2_McGrath.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end first modal -->
+
+    <!-- begin second modal -->
+  <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Former Prime Minister Stephen Harper</h4>
+        <p>Stephen Harper, a prime minister from Alberta and a MP from Calgary, was in support of the oil sands and the oil industry as a whole. During his tenure as prime minister, he was a vocal supporter of pipeline expansion and supported the Canadian energy industry. Harper did, however, sign onto an G7 agreement in 2015 to phase out fossil fuels by 2100 — displaying a willingness to adapt to new, more sustainable energy options.<br><br>
+“I think it’s one of those things where [former] Prime Minister Harper said we need to phase out fossil fuels by the end of the century, it said different things to different people than when Justin Trudeau says it,” said Leach.</p>
+
+        <audio controls>
+          <source src="audio/Clip_3_Leach.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end second modal -->
+
+ <!-- begin third modal -->
+  <!-- Modal Structure -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <h4>Premier Rachel Notley (NDP)</h4>
+          <p>Despite being a New Democratic premier, Notley has gone against traditional NDP-environmental concerns and supported the oil industry. Her government has supported the oil industry as a job creator and economic cornerstone of the province, but implemented a carbon tax and other legislations to minimize the oil industry’s negative environmental effects. She spoke out about Trudeau’s oil sands comment here, reinforcing the importance of the industry to Albertans and Canadians alike.</p>
+
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today I was asked about the future of the oil sands – how long into the future will the world need oil? Here’s what I&#39;d like to say. <a href="https://twitter.com/hashtag/ableg?src=hash">#ableg</a> <a href="https://t.co/LcnUvF0tQ8">pic.twitter.com/LcnUvF0tQ8</a></p>&mdash; Rachel Notley (@RachelNotley) <a href="https://twitter.com/RachelNotley/status/820017192079007744">January 13, 2017</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end third modal -->
+   <!-- begin forth modal -->
+  <!-- Modal Structure -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <h4>Wild Rose Party of Alberta</h4>
+          <p>Alberta’s Wild Rose Party has repeatedly emphasized the importance of the oil industry to Alberta. <a href="http://www.wildrose.ca/wildrose_calls_on_ndp_to_immediately_implement_five_step_plan_to_halt_damage_to_energy_sector"><i class="material-icons">launch</i></a> After Trudeau’s comment about phasing out the oil sands, Wild Rose leader Brian Jean slammed the Prime Minister’s remark.</p>
+
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/JustinTrudeau">@JustinTrudeau</a>, if you want to &quot;phase out&quot; the oil sands, you&#39;ll have to go through me and 4 million Albertans first. <a href="https://twitter.com/hashtag/ableg?src=hash">#ableg</a> <a href="https://t.co/yWn83ibYBU">https://t.co/yWn83ibYBU</a></p>&mdash; Brian Jean (@BrianJeanWRP) <a href="https://twitter.com/BrianJeanWRP/status/819955359527768064">January 13, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end forth modal -->
+
+ <!-- begin fifth modal -->
+  <!-- Modal Structure -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <h4>Aboriginal Peoples</h4>
+          <p>Thoughts on the oil sands are as diverse as Aboriginal communities themselves. Some Aboriginal communities have struck prosperity after discovering oil on their lands; others have suffered the negative effects of pollution. About 23,000 Aboriginal Peoples live in the oil sands region of Northern Alberta.<br>
+“There's a lot of concern in downstream communities, which are primarily First Nation, over the impacts on water, on air and on food from these oil sands operations,” said Stewart. “For a long time the companies denied that the tailing ponds leaked. It’s been proven that they do.”
+Aboriginal Peoples have the constitutionally guaranteed right to hunt, fish and trap on their lands. If their food sources are contaminated, Stewart says that is breaking Canada’s treaty-bound agreement with them.<br>
+The Government of Canada has compromised <a href="https://www.nrcan.gc.ca/sites/www.nrcan.gc.ca/files/energy/pdf/oilsands-sablesbitumineux/14-0696%20Oil%20Sands%20-%20Indigenous%20Peoples_e.pdf"><i class="material-icons">launch</i></a> with Aboriginal Peoples on the oil sands issues in a variety of ways; economically, environmentally and socially.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end fifth modal -->
+
+
+   <!-- begin sixth modal -->
+  <!-- Modal Structure -->
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <h4>Keith McGrath</h4>
+          <p>“Well it’s a benefit that, having lived in Fort McMurray for 32 years and having travelled from Eastern Canada to Western Canada, stateside and to other countries, oil that comes out of the ground here in Fort McMurray is a benefit to not just to canada, but to the rest of the world. It’s a very sustainable development, it’s also mindful of the economic impacts as well as the environmental impacts.”</p>
+                <audio controls>
+                  <source src="audio/Clip_4_McGrath.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+          <p>“I think we’re a long ways away from replacing oil. I’m all for sustainability, saying we want to protect the environment. But at the end of the day, you don’t suddenly want to go back to the Great Depression or anything like that. The reality is that we’re a long ways away from replacing oil. "</p>
+
+                <audio controls>
+                  <source src="audio/Clip_5_McGrath.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end six modal -->
+
+  
+  <!-- begin seventh modal -->
+  <!-- Modal Structure -->
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <h4>Phil Meagher</h4>
+          <p>“I grew up in a one industry community, that would be a pulp and paper town, and then I moved to Fort McMurray for my teaching career, so all I can say is the oil sands are as important to our local economy as trees were to my home town,” Meager said in a statement. “All I wish is that the market would stay stable and not go up and down so much, this would be much better for Fort McMurray and the Alberta economy…”</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end seventh modal -->
+
+  <!-- begin eighth modal -->
+  <!-- Modal Structure -->
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <h4>Greenpeace Canada</h4>
+          <p>““So basically we think three things need to happen. First, we need to stop the expansion of the oil sands. So stop building new pipelines, new mines, new in-situ facilities. Secondly, clean up the existing operations. There’s tailing ponds that leak, there’s all kinds of devastation in the area. And then thirdly, phase out the existing operations of the course of the coming decades. We know we’re not going to be shutting down the tar sands tomorrow, but we have to start doing it now, and that means not building new infrastructure but also having a plan for both workers, communities, in order to get off of oil. Because we need to be off of fossil fuels by midcentury, and that’s going to take a lot of effort around the world, but if we simply wait until the world market sort of forces us to do that, it’s going to be very messy. It’s going to look a lot what happened since the oil price dropped in 2014, whereas we can do this in a much more managed decline approach.”</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end eightth modal -->
+
+  <!-- begin nineth modal -->
+  <!-- Modal Structure -->
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <h4>Royal Dutch Shell Plc</h4>
+          <p>Shell has been a longstanding investor <a href="http://www.shell.ca/en_ca/energy-and-innovation/oil-sands/oil-sands-performance-report/_jcr_content/par/textimage_78af.stream/1463441702776/00cfc57a8625b41538ec24a2fc9d2e7160147b85367300b8dd8b9cb735aa1736/she-2055-oil-sands-performance-report-2015-final1.pdf"><i class="material-icons">launch</i></a> in the oil sands, but announced in March 2017 that the company is selling almost all its interest in the oil sands. In the Athabasca Oil Sands project, Shell is reducing their interest from 60 per cent to 10. They are also selling the entirety of their interest in the Peace River Complex in-situ assets. </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end nineth modal -->
+
+  <!-- begin tenth modal -->
+  <!-- Modal Structure -->
+    <div id="Amodal" class="modal">
+      <div class="modal-content">
+        <h4>Suncor Energy Inc.</h4>
+          <p> Suncor Energy was one of the first companies to invest in the oil sands, and the oil sands remain the focus of their business today. Suncor engages in both surface and in-situ mining.</p>
+
+          <div class="video-container">
+            <iframe width="853" height="480" src="//www.youtube.com/embed/eiKNBGiSBBI" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end tenth modal -->
+
+
+    <!-- begin eleventh modal -->
+  <!-- Modal Structure -->
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <h4>President Donald Trump</h4>
+          <p> President Donald Trump’s ‘America First’ energy strategy has some concerned that future policies could impact Canada’s energy exports to the United States. Trump’s policies, however, could be a mixed bag: he’s approved the Keystone XL pipeline that former President Barack Obama vetoed. Keystone XL would allow for easier shipment of Canadian crude to refineries in Texas, but it’s controversial path to the southern United States had environmentalists worried about potential leaks. 
+</p>
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDonaldTrump%2Fvideos%2F10158673447365725%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end eleventh modal -->
+
+    <!-- begin 12th modal -->
+  <!-- Modal Structure -->
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <h4>TransCanada Corp.</h4>
+          <p>  TransCanada Corp. has pushed the controversial Keystone XL pipeline. The proposed pipeline would transport crude oil from Hardisty, Alberta to Steele City, Nebraska. President Barack Obama vetoed the pipeline, to then-Prime Minister Stephen Harper’s dismay, but President Trump approved the pipeline within a month of his inauguration.
+</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat ">close</a>
+      </div>
+    </div>
+  <!-- end eleventh modal -->
+
+
+<!------ BENEFITS SECTION START -->
  <div id="section5" class="section scrollspy grey darken-3">
     <div class="section no-pad-bot">
       <div class="light">
@@ -523,259 +756,185 @@ Bitumen remained untouched in the oil sands for centuries, tucked deep within th
           <h5 class="header orange-text text-lighten-4">Who would benefit?</h5>
           <p class="orange-text text-lighten-4">Discourse over the oil sands as they are today - and the future of the valuable bitumen lying beneath the surface - is heavily charged. Views range from considering bitumen as a vital part of the Albertan economy and a resource to be exploited, to the belief that the oil sands production should be shut down immediately. Here’s a look into the views of major stakeholders in Canada and abroad.</p>
         </div>
-
-
-    <!-- This is the shit in the card -->
-<div class="row">
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">PM Justin Trudeau</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Prime Minister Justin Trudeau<i class="material-icons right">close</i></span>
-            <p>Prime Minister Justin Trudeau found himself in hot water after he told a town hall crowd that "we can't shut down the oilsands tomorrow. We need to phase them out. We need to manage the transition off of our dependence on fossil fuels. That is going to take time. And, in the meantime, we have to manage that transition." He later went on to retract that statement, saying he misspoke and would continue to support Albertans. The backlash to Trudeau’s statement was immediate, but once he reconfirmed his thoughts and apologized, public opinion tempered. <br/>“I think, in all fairness to Justin Trudeau, that was an off moment,” said McGrath. </p>
-          </div>
-        </div>
-      </div>
-        <!-- This is the shit in the card -->
-              
-              
-              <!-- This is the shit in the card -->
-    <!-- This is the shit in the card -->
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">F-PM Stephen Harper</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Former Prime Minister Stephen Harper<i class="material-icons right">close</i></span>
-            <p>Stephen Harper, a prime minister from Alberta and a MP from Calgary, was in support of the oil sands and the oil industry as a whole. During his tenure as prime minister, he was a vocal supporter of pipeline expansion and supported the Canadian energy industry. Harper did, however, sign onto an G7 agreement in 2015 to phase out fossil fuels by 2100 - displaying a willingness to adapt to new, more sustainable energy options.<br/>
-            “I think it’s one of those things where Prime Minister Harper said we need to phase out fossil fuels by the end of the century, it said different things to different people than when Justin Trudeau says it,” said Leach.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Premier Rachel Notley (NDP)</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Premier Rachel Notley<i class="material-icons right">close</i></span>
-            <p>Despite being a New Democratic premier, Notley has gone against traditional NDP-environmental concerns and supported the oil industry. Her government has supported the oil industry as a job creator and economic cornerstone of the province, but implemented a carbon tax and other legislations to minimize the oil industry’s negative environmental effects. She spoke out about Trudeau’s oil sands comment here, reinforcing the importance of the industry to Albertans and Canadians alike.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Wild Rose Party of Alberta</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Wild Rose Party of Alberta<i class="material-icons right">close</i></span>
-            <p>Alberta’s Wild Rose Party has repeatedly emphasized the importance of the oil industry to Alberta. After Trudeau’s comment about phasing out the oil sands, Wild Rose leader Brian Jean slammed the Prime Minister’s remark.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">First Nations Communities</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">First Nations Communities<i class="material-icons right">close</i></span>
-            <p>Thoughts on the oil sands are as diverse as Aboriginal communities themselves. Some First Nations communities have struck prosperity after discovering oil on their lands; others have suffered the negative effects of pollution. About 23,000 Aboriginal Peoples live in the oil sands region of Northern Alberta.<br/>
-“There's a lot of concern in downstream communities, which are primarily First Nation, over the impacts on water, on air and on food from these oil sands operations,” said Stewart. “For a long time the companies denied that the tailing ponds leaked. It’s been proven that they do.”<br/>
-Aboriginal Peoples have the constitutionally guaranteed right to hunt, fish and trap on their lands. If their food sources are contaminated, Stewart says that is breaking Canada’s treaty-bound agreement with them.<br/>
-The Government of Canada has compromised with Aboriginal Peoples on the oil sands issues in a variety of ways; economically, environmentally and socially.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Progressive Conservative Party of Alberta</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-        <!-- This is the shit in the card -->
-              
-              
-              <!-- This is the shit in the card -->
-    <!-- This is the shit in the card -->
-
-        <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Keith McGrath</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Keith McGrath<i class="material-icons right">close</i></span>
-            <p>“Well it’s a benefit that, having lived in Fort McMurray for 32 years and having travelled from Eastern Canada to Western Canada, stateside and to other countries, oil that comes out of the ground here in Fort McMurray is a benefit to not just to canada, but to the rest of the world. It’s a very sustainable development, it’s also mindful of the economic impacts as well as the environmental impacts.”<br/>
-“I think we’re a long ways away from replacing oil. I’m all for sustainability, saying we want to protect the environment. But at the end of the day, you don’t suddenly want to go back to the Great Depression or anything like that. The reality is that we’re a long ways away from replacing oil.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Phil Meager</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Phil Meager<i class="material-icons right">close</i></span>
-            <p>“I grew up in a one industry community, that would be a pulp and paper town, and then I moved to Fort McMurray for my teaching career, so all I can say is the oil sands are as important to our local economy as trees were to my home town,” Meager said in a statement. “All I wish is that the market would stay stable and not go up and down so much, this would be much better for Fort McMurray and the Alberta economy…”</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Greenpeace</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Greenpeace<i class="material-icons right">close</i></span>
-            <p>“So basically we think three things need to happen. First, we need to stop the expansion of the oil sands. So stop building new pipelines, new mines, new in-situ facilities. Secondly, clean up the existing operations. There’s tailing ponds that leak, there’s all kinds of devastation in the area. And then thirdly, phase out the existing operations of the course of the coming decades. We know we’re not going to be shutting down the tar sands tomorrow, but we have to start doing it now, and that means not building new infrastructure but also having a plan for both workers, communities, in order to get off of oil. Because we need to be off of fossil fuels by midcentury, and that’s going to take a lot of effort around the world, but if we simply wait until the world market sort of forces us to do that, it’s going to be very messy. It’s going to look a lot what happened since the oil price dropped in 2014, whereas we can do this in a much more managed decline approach."</p>
-          </div>
-        </div>
-      </div>
-
-
-        <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Shell Oil</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Shell Oil<i class="material-icons right">close</i></span>
-            <p>Shell has been a longstanding investor in the oil sands, but announced earlier this month that the company is selling almost all its interest in the oil sands. In the Athabasca Oil Sands project, Shell is reducing their interest from 60 per cent to 10. They are also selling the entirety of their interest in the Peace River Complex in-situ assets. </p>
-          </div>
-        </div>
-      </div>
-
-        <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Suncor Energy</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Suncor Energy<i class="material-icons right">close</i></span>
-            <p>Suncor Energy was one of the first companies to invest in the oil sands, and the oil sands remain the focus of their business today. Suncor engages in both surface and in-situ mining.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">SunCor Energy</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-
-        <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">President Donald Trump</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">President Donald Trump<i class="material-icons right">close</i></span>
-            <p>President Donald Trump’s ‘America First’ energy strategy has some concerned that future policies could impact Canada’s energy exports to the United States. Trump’s policies, however, could be a mixed bag: he’s approved the Keystone XL pipeline that President Barack Obama vetoed. Keystone XL would allow for easier shipment of Canadian crude to refineries in Texas, but it’s controversial path to the southern United States had environmentalists worried about potential leaks.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l4 m6 s12">
-         <div class="card medium">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/icon-01.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">TransCanada Corp</span>
-            <span><a class="activator">More Information<i class="material-icons right">info_outline</i></a></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">TransCanada Corp<i class="material-icons right">close</i></span>
-            <p>TransCanada Corp. has pushed the controversial Keystone XL pipeline. The proposed pipeline would transport crude oil from Hardisty, Alberta to Steele City, Nebraska. President Barack Obama vetoed the pipeline, to then-Prime Minister Stephen Harper’s dismay, but President Trump approved the pipeline within a month of his inauguration.</p>
-          </div>
-        </div>
-      </div>
-
       
 
-</div>
-              
+<!-- card slider buttons -->
+      <div class="center butttonContainer">
+        <a class="btn-floating btn-large waves-effect waves-light prev white"><i class="mdi mdi-chevron-left black-text"></i></a>
+        <a class="btn-floating btn-large waves-effect waves-light next white"><i class="mdi mdi-chevron-right black-text"></i></i></a>
       </div>
-    </div>
-  
+<!-- card slider buttons -->
 
+        <div class="siema" data-indicators="true">
+        
+
+
+          <div class="scont">         
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal2"><img class="activator" src="images/benefits/sHarp.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Former Prime Minister Stephen Harper</span>
+                <span><a class="modal-trigger" href="#modal2">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+
+
+                  <!-- first card item -->
+          <div class="scont">         
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal1"><img class="modal-trigger" src="images/benefits/JT.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Prime Minister Justin Trudeau</span>
+                <span><a class="modal-trigger" href="#modal1">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+        <!-- end first Card -->
+
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal3"><img src="images/benefits/Rach.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Premier Rachel Notley (NDP)</span>
+                <span><a class="modal-trigger" href="#modal3">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal4"><img src="images/benefits/WRP1.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Wild Rose Party of Alberta</span>
+                <span><a class="modal-trigger" href="#modal4">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal5"><img src="images/benefits/abor-01.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title grey-text text-darken-4">Aboriginal Peoples</span>
+                <span><a class="modal-trigger" href="#modal5">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal6"><img src="images/benefits/Keith.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title grey-text text-darken-4">Keith McGrath</span>
+                <span><a class="modal-trigger" href="#modal6">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal7"><img src="images/benefits/Meagher.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Phil Meagher</span>
+                <span><a class="modal-trigger" href="#modal7">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal8"><img src="images/benefits/greabpeace.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Greenpeace Canada</span>
+                <span><a class="modal-trigger" href="#modal8">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal9"><img src="images/benefits/shell-01.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Royal Dutch Shell Plc</span>
+                <span><a class="modal-trigger" href="#modal9">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#Amodal"><img src="images/benefits/SunCor.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Suncor Energy Inc.</span>
+                <span><a class="modal-trigger" href="#Amodal">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="scont">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal11"><img src="images/benefits/Don.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">President Donald Trump</span>
+                <span><a class="modal-trigger" href="#modal11">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="scont">
+             <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <a class="modal-trigger" href="#modal12"><img src="images/benefits/TCCorp.png"></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">TransCanada Corp</span>
+                <span><a class="modal-trigger" href="#modal12">More Info<i class="material-icons right">info_outline</i></a></span>
+              </div>
+
+            </div>
+          </div>
+    
+      </div>
+                
+    </div>
   </div>
+    
+
+</div>
 
 <!--<div class="row grey darken-2">-->
   
@@ -825,8 +984,12 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
           <h5 class=" header col s12 green-text text-lighten-2">Alternatives</h5>
             <image class=" responsive-img" src="images/recycledDilutent1.png">
             </div>
+
             <div  id="section2" class=" col s12 scrollspy">
                 <h5 class="center green-text light text-lighten-2">Green Energy?</h5>
+
+
+
 
                 <p class="green-text light text-lighten-2">&emsp;&emsp;A world without oil would look drastically different from the world as we know it today. While most of the oil extracted from the oil sands is used for transportation purposes, oil is used for a vast array of products across the board. A true phase out of oil - whether that happens in ten years, 50 years, a century or even longer - means that sustainable energy would have to replace oil entirely.<br>
   &emsp;&emsp;Recent pushes for environmental responsibility and the battle against climate change have increased the use of sustainable energies in the Western world. In Canada today, renewable energies account for 18.9 per cent of the country’s total primary energy supply.</p>
@@ -971,9 +1134,11 @@ The Government of Canada has compromised with Aboriginal Peoples on the oil sand
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/bodymovin.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/main.js"></script>
   <script>
     //var buttonEl = document.querySelector('.enter-vr');
     var scene = document.querySelector('a-scene');

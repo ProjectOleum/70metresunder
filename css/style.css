@@ -15,6 +15,12 @@ Stuff added
  *::before {
   box-sizing: border-box;
 }
+
+
+
+
+
+
 /* stuff for new timeline */
 
 div#timeline {
@@ -43,6 +49,37 @@ div#timeline .dot {
   text-align: center;
   cursor: pointer;
 }
+
+
+
+
+.buttonContainer{
+  position: relative;
+}
+.prev{
+  position:absolute;
+  left:2%;
+  margin-top: 15%;
+  z-index: 99999;
+  opacity: 0.4;
+}
+.next{
+  position:absolute;
+  margin-top: 15%;
+  right:2%;
+  z-index: 99999;
+  opacity: 0.4;
+}
+
+.scont {
+  width: 100%;
+  padding:1%;
+}
+
+.siema {
+  margin: 1rem 0;
+}
+
 
 
 
@@ -442,6 +479,49 @@ Stuff added
 
 */
 
+img.responsive-img.small {
+    width: 50px;
+    height:auto;
+  }
+img.responsive-img.med {
+    width: 100px;
+    height:auto;
+  }
+  img.responsive-img.large {
+    width: 500px;
+    height:auto;
+  }
+
+
+.muter{
+  display:hidden;
+}
+.unmuter{
+  display:visible;
+}
+img.responsive-img.ico {
+    width: 50%;
+    height:auto;
+    padding-top: 25%;
+  }
+
+#audio{
+  opacity:0.5;
+  transition:all 0.5;
+}
+#audio:hover{
+  opacity:1,0;
+  transform: scale(1.15,1.15);
+  transition:all 0.5;
+}
+#audio:active{
+  opacity:1.0;
+  transform: scale(1.15,1.15);
+  transition:all 0.5;
+}
+
+
+
 
 
 
@@ -472,6 +552,23 @@ p {
 
   .mute-button {
     padding-top:28%;
+    padding-bottom: 5%;
+  }
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+
+  .mute-button {
+    padding-top:28%;
+    padding-bottom: 5%;
   }
 }
 

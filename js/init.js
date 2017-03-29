@@ -249,9 +249,15 @@ $('.dot:nth-child(10)').click(function(){
 
 
 
+   $("#audio").click( function (){
+       $("#vid").prop('muted', !$("#vid").prop('muted'));
+       $('#tog').toggleClass('muter unmuter');
+   });
 
 
-
+	$(".tog").click(function(){
+	  $('img',this).toggle();
+	});
 /*
 
 if ($('#switch1').not(':checked')){
@@ -304,13 +310,44 @@ $("#switch1").click(function(){
 */
 
 
-
-
-
+/* MODAL STUFF */
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+      
+/* Modal Stuff */
 
 
 
 })(jQuery); // end of jQuery name space
+
+
+// perPage accepts two kind of data as a value
+
+// Number:
+// fixed amount of slider for all resolutions
+
+// example:
+// const mySiema = new Siema({
+//   perPage: 2,
+// });
+
+
+// Object
+// more complex configuration allows you to specify
+// number of slides dependable of browsers viewport
+// example below show single slide on small viewpoer
+// 2 slider on scrrens wider than 768px
+// 3 slider on scrrens wider than 1024px
+
+// example:
+// const mySiema = new Siema({
+//   perPage: {
+//     768: 2,
+//     1024: 3,
+//   },
+// });
 
 
 
