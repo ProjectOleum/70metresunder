@@ -21,7 +21,18 @@ iframe#aframe {
   height: 40vw;
 }
 
+.justify-text
+{
+  text-align: justify;
+}
 
+@media screen and ( min-width: 601px ) {
+  .vcenter
+  {
+    display: flex;
+    align-items: center;
+  }
+}
 
 
 /* stuff for new timeline */
