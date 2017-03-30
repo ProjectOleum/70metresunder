@@ -16,7 +16,10 @@ Stuff added
   box-sizing: border-box;
 }
 
-
+iframe#aframe {
+  width: 100%;
+  height: 40vw;
+}
 
 
 

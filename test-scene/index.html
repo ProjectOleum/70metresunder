@@ -7,32 +7,32 @@
     <meta name="description" content="Test Scene">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.3.4/dist/aframe-extras.min.js"></script>
-
-
+    <script src="aframe-orbit-controls-component.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       
-    </head>
+      <script src="https://unpkg.com/aframe-physics-system@^1.3.x/dist/aframe-physics-system.min.js" data-angle="aframe-physics-system"></script>
+</head>
 
   <body>
     
     <a-scene>
     <!-- for embedded make tag above like this -->
       <a-assets>
-        <a-asset-item id="tree" src="snow_tree.dae">
-        <a-asset-item id="refinery" src="oil_refinery.dae">
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
       </a-assets>
-      <a-entity position="0 0 -1.5" scale="0.05 0.05 0.05" animation-mixer json-model="src: url(WindTurbine5.js);"></a-entity>
+      <a-entity id="target" position="0 1 0">
+      <a-entity position="0 -1 0" scale="0.05 0.05 0.05" animation-mixer json-model="src: url(WindTurbine5.js);"></a-entity>
+      </a-entity>
 
-      <a-collada-model position="0 2 0" scale="0.1 0.1 0.1" rotation="0 180 0" src="#refinery"></a-collada-model>
-      
+      <a-camera target="#target" distance="2" orbit-controls look-controls-enabled=false wasd-controls-enabled=true position="0 0 0" ></a-camera>
       <!-- Background sky. -->
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
 
       <!-- Ground. -->
       <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
+     
 
     </a-scene> 
       
