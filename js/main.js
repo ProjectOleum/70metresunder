@@ -2,7 +2,7 @@ const mySiema = new Siema({
 
     //perPage: 3,
 	  perPage: {
-	   768: 2,
+	   600: 2,
 	  1024: 3,
 	},
 });
