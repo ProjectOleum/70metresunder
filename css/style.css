@@ -64,6 +64,37 @@ iframe#aframe {
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 
 
+.pulser {
+
+  position: relative;
+  width: auto;
+  height: auto;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(51, 51, 51, 0.7);
+  border-radius: 10px;
+  border-radius: 50%;
+  background-color: #333333;
+  background-image: url(images/icons/oil-01.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding:10px;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulser:hover 
+{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
 /* stuff for new timeline */
 
 div#timeline {
@@ -640,6 +671,40 @@ h5.renewable-title {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#circle-shape-example { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#circle-shape-example p { 
+  line-height: 1.8; 
+}
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
 
 
 
