@@ -37,6 +37,7 @@ iframe#aframe {
 
 
 
+
 .pulse-button {
 
   position: relative;
@@ -501,10 +502,6 @@ div.mask article p {
   border: none;
 }
 
-.mute-button
-{
-  padding-top:35%;
-}
 
 
 
@@ -597,11 +594,12 @@ p {
   }
 
 
-  .mute-button {
-    padding-top:28%;
-    padding-bottom: 5%;
-  }
+
 }
+  .mute-button {
+    bottom:0px;
+    height:100%;
+  }
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -655,6 +653,12 @@ footer.page-footer {
 }
 
 
+@media screen and (max-width : 1920px){
+  .headline{
+    margin-top:28%;
+  }
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -663,12 +667,18 @@ footer.page-footer {
   #index-banner .section {
     top: 10%;
   }
+  .headline{
+    margin-top:18%;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
 
+  }
+  .headline{
+    margin-top:8%;
   }
 }
 
