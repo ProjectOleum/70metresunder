@@ -12,7 +12,7 @@
 
 
     $(document).ready(function(){
-      $('.carousel').carousel();
+      $('.carousel').carousel({fullWidth:true});
     });
 
     // Next slide
@@ -26,7 +26,6 @@ $('.carousel').carousel('set', 4);
 
 $('.carousel.carousel-slider').carousel({fullWidth: true});
         
-
 
 
 /*
@@ -314,10 +313,13 @@ $("#switch1").click(function(){
   $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
+    /*$('.carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+       var cur = $('.carousel-item').get(currentSlide + 1);
+      $('.carousel').animate({height:($(cur).height() + 10)}, 500);
+    });*/
   });
       
 /* Modal Stuff */
-
 
 
 })(jQuery); // end of jQuery name space
