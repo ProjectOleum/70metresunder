@@ -11,7 +11,7 @@ Stuff added
 
 */
 *,
- *::after, 
+ *::after,
  *::before {
   box-sizing: border-box;
 }
@@ -28,13 +28,12 @@ iframe#aframe {
 
 .map-container{
   height: 50vw;
-  max-height: 525px;
 }
 
 .map-text{
-  padding-top:40%; 
-  padding-bottom:30%; 
-  padding-right:15%; 
+  padding-top:40%;
+  padding-bottom:30%;
+  padding-right:15%;
   max-height:500px;
 }
 
@@ -44,7 +43,7 @@ iframe#aframe {
     display: flex;
     align-items: center;
   }
-  
+
 }
 
 ul.collection{
@@ -74,7 +73,7 @@ li.collection-item.grey.darken-2.left-align {
   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
-.pulse-button:hover 
+.pulse-button:hover
 {
   -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
 }
@@ -722,17 +721,17 @@ h5.renewable-title {
 
 
 
-#circle-shape-example { 
-  font-family: Open Sans, sans-serif; 
+#circle-shape-example {
+  font-family: Open Sans, sans-serif;
 }
-#circle-shape-example p { 
-  line-height: 1.8; 
+#circle-shape-example p {
+  line-height: 1.8;
 }
-#circle-shape-example .curve { 
+#circle-shape-example .curve {
   width: 33%; height: auto;
   min-width: 150px;
   float: left;
-  margin-right:2rem; 
+  margin-right:2rem;
   border-radius: 50%;
   -webkit-shape-outside:circle();
   shape-outside:circle();
@@ -781,9 +780,9 @@ footer.page-footer {
   height: 100vw;
   }
   .map-text{
-  padding-top:0%; 
-  padding-bottom:0%; 
-  padding-right:0%; 
+  padding-top:0%;
+  padding-bottom:0%;
+  padding-right:0%;
   max-height:500px;
   }
 }
@@ -792,7 +791,3 @@ footer.page-footer {
     margin: 0 auto;
 
 }
-
-
-
-
