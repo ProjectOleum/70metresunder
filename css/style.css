@@ -26,14 +26,35 @@ iframe#aframe {
   text-align: justify;
 }
 
+.map-container{
+  height: 50vw;
+  max-height: 525px;
+}
+
+.map-text{
+  padding-top:40%; 
+  padding-bottom:30%; 
+  padding-right:15%; 
+  max-height:500px;
+}
+
 @media screen and ( min-width: 601px ) {
   .vcenter
   {
     display: flex;
     align-items: center;
   }
+  
 }
 
+ul.collection{
+  border: none;
+  font-size: large;
+}
+
+li.collection-item.grey.darken-2.left-align {
+    border-bottom: none;
+}
 
 
 
@@ -171,43 +192,43 @@ div#timeline .dot {
 
 /* DOTS PLUS NAMES = Screenspace divided 16 */
 div#timeline .dot:nth-child(1) {
-  left: 5%;
+  left: 2%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(2) {
-  left: 15%;
+  left: 12%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(3) {
-  left: 25%;
+  left: 22%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(4) {
-  left: 35%;
+  left: 32%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(5) {
-  left: 45%;
+  left: 42%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(6) {
-  left: 55%;
+  left: 52%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(7) {
-  left: 65%;
+  left: 62%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(8) {
-  left: 75%;
+  left: 72%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(9) {
-  left: 85%;
+  left: 82%;
   background-color: #212121;
 }
 div#timeline .dot:nth-child(10) {
-  left: 95%;
+  left: 92%;
   background-color: #212121;
 }
 
@@ -703,7 +724,6 @@ h5.renewable-title {
 
 #circle-shape-example { 
   font-family: Open Sans, sans-serif; 
-  margin: 2rem; 
 }
 #circle-shape-example p { 
   line-height: 1.8; 
@@ -757,6 +777,20 @@ footer.page-footer {
   .headline{
     margin-top:8%;
   }
+  .map-container{
+  height: 100vw;
+  }
+  .map-text{
+  padding-top:0%; 
+  padding-bottom:0%; 
+  padding-right:0%; 
+  max-height:500px;
+  }
+}
+.map-container img {
+    width: 96%;
+    margin: 0 auto;
+
 }
 
 
