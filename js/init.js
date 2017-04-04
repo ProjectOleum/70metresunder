@@ -106,7 +106,7 @@ var introPlayer = document.querySelector('.banner__video');
 /*FIRST stuff below for timeline items */
 $('.dot:nth-child(1)').click(function(){
   $('.inside').animate({
-    'width' : '5%'
+    'width' : '2%'
   }, 500); 
   $('article').removeClass('hactive');
   $('article').removeClass('prior');
@@ -117,7 +117,7 @@ $('.dot:nth-child(1)').click(function(){
 /*SECOND add post to 3-10 prior t 1*/
 $('.dot:nth-child(2)').click(function(){
   $('.inside').animate({
-    'width' : '15%'
+    'width' : '12%'
   }, 500);
   $('article').removeClass('hactive');
   $('.two').addClass('hactive');
@@ -129,7 +129,7 @@ $('.dot:nth-child(2)').click(function(){
 /*THIRD add post to 4-10 prior to 1 + 2*/
 $('.dot:nth-child(3)').click(function(){
   $('.inside').animate({
-    'width' : '25%'
+    'width' : '22%'
   }, 500);
   $('article').removeClass('hactive'); 		/* remove active element all together */
   $('article').removeClass('prior');		 /* remove prior element all together */
@@ -145,7 +145,7 @@ $('.dot:nth-child(3)').click(function(){
 /*FOUR add post to 5-10 add prior to 1-3 */
 $('.dot:nth-child(4)').click(function(){
   $('.inside').animate({
-    'width' : '35%'
+    'width' : '32%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
@@ -165,7 +165,7 @@ $('.dot:nth-child(4)').click(function(){
 /*FIVE add post to 6-10 add prior to 1-4*/
 $('.dot:nth-child(5)').click(function(){
   $('.inside').animate({
-    'width' : '45%'
+    'width' : '42%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
@@ -185,7 +185,7 @@ $('.dot:nth-child(5)').click(function(){
 /* Six add post to 7-10 add prior to 1-5 */
 $('.dot:nth-child(6)').click(function(){
   $('.inside').animate({
-    'width' : '55%'
+    'width' : '52%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
@@ -197,7 +197,7 @@ $('.dot:nth-child(6)').click(function(){
 });
 $('.dot:nth-child(7)').click(function(){
   $('.inside').animate({
-    'width' : '65%'
+    'width' : '62%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
@@ -209,7 +209,7 @@ $('.dot:nth-child(7)').click(function(){
 
 $('.dot:nth-child(8)').click(function(){
   $('.inside').animate({
-    'width' : '75%'
+    'width' : '72%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
@@ -221,7 +221,7 @@ $('.dot:nth-child(8)').click(function(){
 
 $('.dot:nth-child(9)').click(function(){
   $('.inside').animate({
-    'width' : '85%'
+    'width' : '82%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
@@ -232,7 +232,7 @@ $('.dot:nth-child(9)').click(function(){
 });
 $('.dot:nth-child(10)').click(function(){
   $('.inside').animate({
-    'width' : '95%'
+    'width' : '92%'
   }, 500);
   $('article').removeClass('hactive');
   $('article').removeClass('post');
