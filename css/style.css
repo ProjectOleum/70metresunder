@@ -612,21 +612,61 @@ img.responsive-img.ico {
     padding-top: 25%;
   }
 
-#audio{
-  opacity:1.0;
-  transition:all 0.5;
-}
-#audio:hover{
-  opacity:1,0;
-  transform: scale(1.15,1.15);
-  transition:all 0.5;
-}
-#audio:active{
-  opacity:1.0;
-  transform: scale(1.15,1.15);
-  transition:all 0.5;
-}
 
+@media only screen and (max-width : 1920px) {
+  #audio{
+    opacity:1.0;
+    transition:all 0.5;
+    margin-top: 50%;
+    margin-right:5%;
+  }
+  #audio:hover{
+    opacity:1,0;
+    transform: scale(1.15,1.15);
+    transition:all 0.5;
+  }
+  #audio:active{
+    opacity:1.0;
+    transform: scale(1.15,1.15);
+    transition:all 0.5;
+  }
+}
+@media only screen and (max-width : 992px) {
+  #audio{
+    opacity:1.0;
+    transition:all 0.5;
+    margin-top: 50%;
+    margin-right:5%;
+  }
+  #audio:hover{
+    opacity:1,0;
+    transform: scale(1.15,1.15);
+    transition:all 0.5;
+  }
+  #audio:active{
+    opacity:1.0;
+    transform: scale(1.15,1.15);
+    transition:all 0.5;
+  }
+}
+@media only screen and (max-width : 600px) {
+  #audio{
+    opacity:1.0;
+    transition:all 0.5;
+    margin-top: 40%;
+    margin-right:5%;
+  }
+  #audio:hover{
+    opacity:1,0;
+    transform: scale(1.15,1.15);
+    transition:all 0.5;
+  }
+  #audio:active{
+    opacity:1.0;
+    transform: scale(1.15,1.15);
+    transition:all 0.5;
+  }
+}
 
 
 
@@ -675,7 +715,7 @@ p {
 
 
   .mute-button {
-    padding-top:2%;
+    padding-top:25%;
     padding-bottom: 5%;
   }
 }
@@ -751,7 +791,7 @@ footer.page-footer {
 
 @media screen and (max-width : 1920px){
   .headline{
-    top:2%;
+
   }
 }
 
@@ -764,7 +804,6 @@ footer.page-footer {
     top: 10%;
   }
   .headline{
-    top:2%;
   }
 }
 
@@ -774,7 +813,7 @@ footer.page-footer {
 
   }
   .headline{
-    top:2%;
+
   }
   .map-container{
   height: 100vw;
