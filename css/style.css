@@ -675,7 +675,7 @@ p {
 
 
   .mute-button {
-    padding-top:28%;
+    padding-top:2%;
     padding-bottom: 5%;
   }
 }
@@ -751,8 +751,7 @@ footer.page-footer {
 
 @media screen and (max-width : 1920px){
   .headline{
-    margin-top:28%;
-    margin-bottom:2%;
+    top:2%;
   }
 }
 
@@ -765,7 +764,7 @@ footer.page-footer {
     top: 10%;
   }
   .headline{
-    margin-top:18%;
+    top:2%;
   }
 }
 
@@ -775,7 +774,7 @@ footer.page-footer {
 
   }
   .headline{
-    margin-top:8%;
+    top:2%;
   }
   .map-container{
   height: 100vw;
